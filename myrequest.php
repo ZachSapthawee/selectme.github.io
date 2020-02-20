@@ -86,26 +86,30 @@ function GetNameAgent($idAgent)
                     <a href="main.php" title="SMselectmelogo"><img class="logo-shippop" alt="SMselectmelogo" src="img/Logo_SM.png"></a>
                     <nav>
                         <div class="li-front-menu">
-                            <a data-name="home" class="member-menu active" href="menu_member.php">
+                            <a data-name="home" class="member-menu active" href="main.php">
                                 หน้าแรก </a>
                         </div>
                         <div class="li-front-menu">
-                            <a data-name="contact" class="member-menu " href="#">
+                            <a data-name="contact" class="member-menu " href="contact.php">
                                 ติดต่อเรา </a>
                         </div>
                         <div class="clear-float"></div>
                     </nav>
                 </div>
                 <div class="right-menu">
-                    <div class="left-sub-right-menu">
-                        <a href="#"><label class="tracking ">
-                                <i class="fa fa-truck"></i> ติดตามรถ</label>
-                        </a>
+                <div>
+                    <div class="right-sub-right-menu">
+                        ชื่อผู้ใช้ : <b> <?php  if($_SESSION['userLevel']=="agent"){echo GetNameAgent($_SESSION['agentId']); }
+                                                else{echo "คุณวิน (Admin)"; }?> 
+                                    </b>
+                        <a href="logout.php" ><button type="button" class="login-btn" style="width:110px;" > ออกจากระบบ </button> </a>
                     </div>
+                </div>
                     <div class="clear-float"></div>
                     <div style="margin-top:7px;">
                         <form action="#" method="get">
-                            <input type="text" name="tracking_code" class="search-box" placeholder="กรอกหมายเลขติดตามรถ" autocomplete="off">
+                            
+                            <input type="text" name="tracking_code" class="search-box" placeholder="กรอกหมายเลขติดตามการส่งสินค้า" autocomplete="off">
                             <button class="btn-search"><img alt="" src="//www.shippop.com/assets/images/frontpage/icon_search.png?v=1.03484"></button>
                         </form>
                     </div>

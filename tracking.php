@@ -88,12 +88,12 @@ function GetNameAgent($idAgent)
                     <a href="main.php" title="SMselectmelogo"><img class="logo-shippop" alt="SMselectmelogo" src="img/Logo_SM.png"></a>
                     <nav>
                         <div class="li-front-menu">
-                            <a data-name="home" class="member-menu active" href="menu_member.php">
+                            <a data-name="home" class="member-menu active" href="main.php">
                                 หน้าแรก </a>
                         </div>
 
                         <div class="li-front-menu">
-                            <a data-name="contact" class="member-menu " href="#">
+                            <a data-name="contact" class="member-menu " href="contact.php">
                                 ติดต่อเรา </a>
                         </div>
                         <div class="clear-float"></div>
@@ -133,7 +133,7 @@ function GetNameAgent($idAgent)
             <div class="row">
 
                 <div class="col align-self-center">
-                    <img src="img/tbl_truck.png" alt=""><br><br>
+                    <img src="img/truck/6WHEELS_Truck.png" alt="" height="100px"><br><br>
                     <form action="" method>
                         Shipment No
                         <input type="text" maxlength="9" style="width:200px" name="tracking_code" class="search-box" placeholder="กรอกหมายเลขติดตามการส่งสินค้า" autocomplete="off">

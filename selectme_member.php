@@ -26,7 +26,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
 
 <head>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
@@ -83,26 +82,30 @@
                     <a href="main.php" title="SMselectmelogo"><img class="logo-shippop" alt="SMselectmelogo" src="img/Logo_SM.png"></a>
                     <nav>
                         <div class="li-front-menu">
-                            <a data-name="home" class="member-menu active" href="menu_member.php">
+                            <a data-name="home" class="member-menu active" href="main.php">
                                 หน้าแรก </a>
                         </div>
                         <div class="li-front-menu">
-                            <a data-name="contact" class="member-menu " href="#">
+                            <a data-name="contact" class="member-menu " href="contact.php">
                                 ติดต่อเรา </a>
                         </div>
                         <div class="clear-float"></div>
                     </nav>
                 </div>
                 <div class="right-menu">
-                    <div class="left-sub-right-menu">
-                        <a href="#"><label class="tracking ">
-                                <i class="fa fa-truck"></i> ติดตามรถ</label>
-                        </a>
+                <div>
+                    <div class="right-sub-right-menu">
+                        ชื่อผู้ใช้ : <b> <?php  if($_SESSION['userLevel']=="agent"){echo GetNameAgent($_SESSION['agentId']); }
+                                                else{echo "คุณวิน (Admin)"; }?> 
+                                    </b>
+                        <a href="logout.php" ><button type="button" class="login-btn" style="width:110px;" > ออกจากระบบ </button> </a>
                     </div>
+                </div>
                     <div class="clear-float"></div>
                     <div style="margin-top:7px;">
                         <form action="#" method="get">
-                            <input type="text" name="tracking_code" class="search-box" placeholder="กรอกหมายเลขติดตามรถ" autocomplete="off">
+                            
+                            <input type="text" name="tracking_code" class="search-box" placeholder="กรอกหมายเลขติดตามการส่งสินค้า" autocomplete="off">
                             <button class="btn-search"><img alt="" src="//www.shippop.com/assets/images/frontpage/icon_search.png?v=1.03484"></button>
                         </form>
                     </div>
@@ -110,90 +113,41 @@
             </div>
         </div>
     </header>
-
     <section class="service-section">
         <div class="wrapper-1000">
-            <h2>เลือกใช้บริการ</h2>
-            <h3>เลือกรถในการจัดส่งสินค้า ให้แก่ sub-agent</h3>
-            <div class="section">
-                <div class="service-boxcar">
-                    <div class="service-itemcar"><a href="selectme_member.php" class="bug-service-card"></a>
-                        <div class="column_cardcar">
-                            หมายเลขสั่งซื้อ : <br>
-                            วันที่จัดส่ง : <br>
-                            จาก : <br>
-                            ส่งถึง : <br>
-                            สถานะ : <br>
-                        </div>
-                        <div class="column_cardcarRR">
-                            <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px">
-                            <button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button>
-                        </div>
+            <h2>บริการของเรา</h2>
+            <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3>
+            <div class="service-box">
+                <div class="service-itemselect">
+                    <div class="service-card_select">
+                            <div class="col_left">
+                                    <div><b>หมายเลขสั่งซื้อ :</b></div>
+                                    <div><b>วันที่จัดส่ง : </b></div>
+                                    <div><b>จาก : </b></div>
+                                    <div><b>ส่งถึง : </b></div>
+                                    <div><b>สถานะ : </b></div>
+                            </div>
+                            <div class="col_Right">
+                                    <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
+                                    <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div>
+                            </div>
                     </div>
-                    <div class="service-itemcar"><a href="selectme_member.php" class="bug-service-card"></a>
-                        <div class="column_cardcar">
-                            หมายเลขสั่งซื้อ : <br>
-                            วันที่จัดส่ง : <br>
-                            จาก : <br>
-                            ส่งถึง : <br>
-                            สถานะ : <br>
-                        </div>
-                        <div class="column_cardcarRR">
-                            <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px">
-                            <button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button>
-                        </div>
-                    </div>
-                    <div class="service-itemcar"><a href="selectme_member.php" class="bug-service-card"></a>
-                        <div class="column_cardcar">
-                            <div>หมายเลขสั่งซื้อ :</div>
-                            <div>วันที่จัดส่ง : </div>
-                            <div>จาก : </div>
-                            <div>ส่งถึง : </div>
-                            <div>สถานะ : </div>
-                        </div>
-                        <div class="column_cardcarRR">
-                            <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px">
-                            <button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button>
-                        </div>
-                    </div>
-                    <div class="service-itemcar"><a href="selectme_member.php" class="bug-service-card"></a>
-                        <div class="column_cardcar">
-                            หมายเลขสั่งซื้อ : <br>
-                            วันที่จัดส่ง : <br>
-                            จาก : <br>
-                            ส่งถึง : <br>
-                            สถานะ : <br>
-                        </div>
-                        <div class="column_cardcarRR">
-                            <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px">
-                            <button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button>
-                        </div>
-                    </div>
-                    <div class="service-itemcar"><a href="selectme_member.php" class="bug-service-card"></a>
-                        <div class="column_cardcar">
-                            หมายเลขสั่งซื้อ : <br>
-                            วันที่จัดส่ง : <br>
-                            จาก : <br>
-                            ส่งถึง : <br>
-                            สถานะ : <br>
-                        </div>
-                        <div class="column_cardcarRR">
-                            <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px">
-                            <button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button>
-                        </div>
-                    </div>
-                    <div class="service-itemcar"><a href="selectme_member.php" class="bug-service-card"></a>
-                        <div class="column_cardcar">
-                            หมายเลขสั่งซื้อ : <br>
-                            วันที่จัดส่ง : <br>
-                            จาก : <br>
-                            ส่งถึง : <br>
-                            สถานะ : <br>
-                        </div>
-                        <div class="column_cardcarRR">
-                            <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px">
-                            <button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button>
-                        </div>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-itemselect">
+                    <div class="service-card_select">
+                            <div class="col_left">
+                                    <div><b>หมายเลขสั่งซื้อ :</b></div>
+                                    <div><b>วันที่จัดส่ง : </b></div>
+                                    <div><b>จาก : </b></div>
+                                    <div><b>ส่งถึง : </b></div>
+                                    <div><b>สถานะ : </b></div>
+                            </div>
+                            <div class="col_Right">
+                                    <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
+                                    <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div>
+                            </div>
                     </div>
                 </div>
             </div>

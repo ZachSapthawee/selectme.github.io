@@ -81,11 +81,11 @@
                     <a href="main.php" title="SMselectmelogo"><img class="logo-shippop" alt="SMselectmelogo" src="img/Logo_SM.png"></a>
                     <nav>
                         <div class="li-front-menu">
-                            <a data-name="home" class="member-menu active" href="menu_member.php">
+                            <a data-name="home" class="member-menu active" href="main.php">
                                 หน้าแรก </a>
                         </div>
                         <div class="li-front-menu">
-                            <a data-name="contact" class="member-menu " href="#">
+                            <a data-name="contact" class="member-menu " href="contact.php">
                                 ติดต่อเรา </a>
                         </div>
                         <div class="clear-float"></div>
@@ -100,16 +100,6 @@
                         <a href="logout.php" ><button type="button" class="login-btn" style="width:110px;" > ออกจากระบบ </button> </a>
                     </div>
                 </div>
-
-                
-                    <!-- <div class="float-right" style="float:right;position: relative">
-                        <button type="button" class="language-btn">
-                            TH </button>
-                        <div class="menu-language">
-                            <a href="#" class="language-change-btn first">TH</a>
-                            <a href="#" class="language-change-btn last">EN</a>
-                        </div>
-                    </div> -->
                     <div class="clear-float"></div>
                     <div style="margin-top:7px;">
                         <form action="#" method="get">

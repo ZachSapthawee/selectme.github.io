@@ -8787,59 +8787,10 @@ footer .footer-copyright .footer-social i {
   font-size: 14px;
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .service-boxcar {
-    /* height: 210px; */
     padding: 20px 0;
     background: #ebebeb;
-    /* position: relative; */
-  }
-  .service-itemcar {
-    height: 90px;
-    padding: 20px 0;
-    background: #f8f8f8;
-    /* position: relative; */
-    text-align: start;
-  }
-  .service-itemcar {
-    display: flex;
-    margin: 10px;
-    font-size: 10px;
-    text-align: start;
-    padding: 10px;
-  }
-  section h2 {
-    font-family: cloud_light;
-    font-size: 1.8em;
-    color: #0b9dd2;
-    margin: 5px 0;
-    padding-bottom: 5px;
-  }
-  section h3 {
-    font-family: cloud_light;
-    font-size: 1em;
-    font-weight: 700;
-    color: #58595b;
-    margin-top: -5px;
-    margin-bottom: 25px;
-  }
-  .column_cardcar {
-    flex: 50%;
-  }
-  .column_cardcarRR {
-    flex: 50%;
-    text-align: end;
-  }
-  .btn_select {
-    margin: 8px 0px;
-  }
-}
-
-/* @media screen and (max-width: 768px) {
-  .service-boxcar {
-    padding: 20px 20px;
-    background: #ebebeb;
-    margin: 0px 100px;
   }
   .service-itemcar {
     height: 90px;
@@ -8849,19 +8800,23 @@ footer .footer-copyright .footer-social i {
   }
   .service-itemcar {
     display: flex;
-    margin: 10px;
+    margin: 0 10px;
     font-size: 10px;
-    text-align: start;
     padding: 10px;
   }
-  section h2 {
+  .sectionselect{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+  }
+  .sectionselect h2 {
     font-family: cloud_light;
     font-size: 1.8em;
     color: #0b9dd2;
     margin: 5px 0;
     padding-bottom: 5px;
   }
-  section h3 {
+  .sectionselect h3 {
     font-family: cloud_light;
     font-size: 1em;
     font-weight: 700;
@@ -8870,6 +8825,7 @@ footer .footer-copyright .footer-social i {
     margin-bottom: 25px;
   }
   .column_cardcar {
+    float: left;
     flex: 50%;
   }
   .column_cardcarRR {
@@ -8880,6 +8836,57 @@ footer .footer-copyright .footer-social i {
     margin: 8px 0px;
   }
 } */
+
+@media screen and (max-width: 425px) {
+  section h2 {
+    font-family: cloud_light;
+    font-size: 2.8em;
+    color: #0b9dd2;
+    margin: 5px 0;
+    padding-bottom: 5px;
+  }
+  .service-itemselect{
+  display: block;
+    width: 405px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px;
+    background: #f8f8f8;
+  }
+  .service-card_select{
+    display: flex;
+    font-size: 1em;
+  }
+  .col_left{
+    flex: 50%;
+    text-align: left;
+  }
+  .col_Right{
+    text-align: right;
+    flex: 50%;
+  }
+  
+}
+.service-itemselect{
+  display: block;
+  width: 600px;
+  padding: 10px;
+  margin: 5px auto;
+  font-size: 14px;
+  background: #f8f8f8;
+}
+.service-card_select{
+  display: flex;
+  font-size: 1em;
+}
+.col_left{
+  flex: 50%;
+  text-align: left;
+}
+.col_Right{
+  text-align: right;
+  flex: 50%;
+}
 
 .service-section .service-box .service-item .service-card {
   height: 210px;
