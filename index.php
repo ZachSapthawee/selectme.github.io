@@ -30,13 +30,11 @@
                                 <label class="control-label">รหัสผ่านเข้าสู่ระบบ</label>
                                 <input name="input_password" type="password" class="form-control"  required=""> <span class="help-block"></span>
                             </div>
-                         
                             <div class="sp-form-button">
                                 <button type="submit" class="btn-reset button-sp-default button-login">เข้าสู่ระบบ</button>
                             </div>
                             <input type="hidden" name="redirect_url" value="">
                         </form>
-  
                         <div class="sp-form-button">
                             <a href="#" class="btn-reset button-facebook button-login">ลืมรหัสผ่าน</a>
                             

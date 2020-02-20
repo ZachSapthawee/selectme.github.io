@@ -41,35 +41,26 @@
 </head>
 <body>
 <header>
-<script type="text/JavaScript">
-
-    </script>
         <div class="top_menu_mobile_toggle">
             <div class="header-mobile">
                 <div class="padding-mobile">
                     <div class="left-menu">
-                        <a class="logo-mobile" href="#" title="SELECTME"><img alt="SELECTME" height="32" src="img/Logo_SM.png"></a>
+                        <a class="logo-mobile" href="main.php" title="SELECTME"><img alt="SELECTME" height="32" src="img/Logo_SM.png"></a>
                     </div>
                     <div class="right-menu">
-                        <a data-name="shortcut-tracking"    class="a-mobile" href="#"><i class="fa fa-truck fa-2x "></i></a>
-                        <a data-name="shortcut-modal-login" class="a-mobile show-login-box"><i class="fa fa-user-circle-o fa-2x"></i></a>
+                        <a data-name="shortcut-tracking"    class="a-mobile" href="tracking.php"><i class="fa fa-truck fa-2x "></i></a>
                         <a data-name="shortcut-openmenu"    class="a-mobile show-menu-mobile" href="#"><i class="fa fa-bars fa-2x"></i></a>
                     </div>
                     <div class="clear-float"></div>
                 </div>
             </div>
             <div class="toolbar ">
-                <div> </div>
                 <ul class="main-menu">
                     <li class="li-header">ชื่อผู้ใช้ : <?php  if($_SESSION['userLevel']=="agent"){echo GetNameAgent($_SESSION['agentId']); } else{echo "คุณวิน (Admin)"; }?> <br></li>
-                    <li class="li-menu"><a data-name="home" href="menu_member.php">ติดตามการส่งสินค้า</a></li>
-                    <li class="li-menu"><a data-name="service" href="#">บริการของเรา</a></li>
-                    <li class="li-menu"><a data-name="general-tools" href="#">เครื่องมือ</a></li>
-                    <li class="li-sub-menu"><a data-name="widget" href="#">Widgets</a></li>
-                    <li class="li-sub-menu"><a data-name="nearby-dropoff" href="#">ค้นหาจุด Dropoff</a></li>
-                    <li class="li-sub-menu"><a data-name="convert_zipcode" href="#">โปรแกรมแยกไฟล์พื้นที่พิเศษ</a></li>
-                    <li class="li-menu"><a data-name="contact" href="#">ติดต่อเรา</a></li>
-                    <li class="li-menu"><a data-name="contact" href="logout.php" style="color:red;">ออกจากระบบ</a></li>
+                    <li class="li-menu"><a data-name="home" href="tracking.php">ติดตามสถานะ</a></li>
+                    <li class="li-menu"><a data-name="contact" href="contact.php">ติดต่อเรา</a></li>
+                    <li class="li-menu"><a data-name="sum" href="report.php">รายงาน</a></li>
+                    <li class="li-menu"><a data-name="logout" href="logout.php" style="color:red;">ออกจากระบบ</a></li>
 
                     <div class="clear-float"></div>
                     <li class="li-etc">
@@ -87,17 +78,12 @@
         <div class="nav-full">
             <div class="inner-nav-full">
                 <div class="left-menu">
-                    <a href="menu_member.php" title="SMselectmelogo"><img class="logo-shippop" alt="SMselectmelogo" src="img/Logo_SM.png"></a>
+                    <a href="main.php" title="SMselectmelogo"><img class="logo-shippop" alt="SMselectmelogo" src="img/Logo_SM.png"></a>
                     <nav>
                         <div class="li-front-menu">
                             <a data-name="home" class="member-menu active" href="menu_member.php">
                                 หน้าแรก </a>
                         </div>
-                        <div class="li-front-menu">
-                            <a data-name="service" class="member-menu " href="#">
-                                บริการของเรา </a>
-                        </div>
-  
                         <div class="li-front-menu">
                             <a data-name="contact" class="member-menu " href="#">
                                 ติดต่อเรา </a>
@@ -107,13 +93,12 @@
                 </div>
                 <div class="right-menu">
                 <div>
-                     
-                     <div class="right-sub-right-menu">
-                     ชื่อผู้ใช้ : <b> <?php  if($_SESSION['userLevel']=="agent"){echo GetNameAgent($_SESSION['agentId']); }
-                                            else{echo "คุณวิน (Admin)"; }?> 
-                                </b>
-                     <a href="logout.php" ><button type="button" class="login-btn" style="width:110px;" > ออกจากระบบ </button> </a>
-                     </div>
+                    <div class="right-sub-right-menu">
+                        ชื่อผู้ใช้ : <b> <?php  if($_SESSION['userLevel']=="agent"){echo GetNameAgent($_SESSION['agentId']); }
+                                                else{echo "คุณวิน (Admin)"; }?> 
+                                    </b>
+                        <a href="logout.php" ><button type="button" class="login-btn" style="width:110px;" > ออกจากระบบ </button> </a>
+                    </div>
                 </div>
 
                 
@@ -162,7 +147,7 @@
                     </div>
                 </div>
                 <div class="service-item"  id="service_06" style="display: block;">
-                    <div class="service-card"> <a href="profile_member.php" class="bug-service-card"></a><img src="//www.shippop.com/assets/images/frontpage/icon_service_06.png?v=1496789498" alt="คุมรายจ่ายง่ายขึ้น">
+                    <div class="service-card"> <a href="report.php" class="bug-service-card"></a><img src="//www.shippop.com/assets/images/frontpage/icon_service_06.png?v=1496789498" alt="คุมรายจ่ายง่ายขึ้น">
                         <div class="title">รายงาน</div>
                         <div class="service-caption">สรุปรายงาน</div>
                     </div>

@@ -71,7 +71,7 @@
         <div class="nav-full">
             <div class="inner-nav-full">
                 <div class="left-menu">
-                    <a href="menu_member.php" title="SMselectmelogo"><img class="logo-shippop" alt="SMselectmelogo" src="img/Logo_SM.png"></a>
+                    <a href="main.php" title="SMselectmelogo"><img class="logo-shippop" alt="SMselectmelogo" src="img/Logo_SM.png"></a>
                     <nav>
                         <div class="li-front-menu">
                             <a data-name="home" class="member-menu active" href="menu_member.php">
