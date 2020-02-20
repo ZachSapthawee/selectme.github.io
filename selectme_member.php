@@ -145,11 +145,11 @@
                     </div>
                     <div class="service-itemcar"><a href="selectme_member.php" class="bug-service-card"></a>
                         <div class="column_cardcar">
-                            หมายเลขสั่งซื้อ : <br>
-                            วันที่จัดส่ง : <br>
-                            จาก : <br>
-                            ส่งถึง : <br>
-                            สถานะ : <br>
+                            <div>หมายเลขสั่งซื้อ :</div>
+                            <div>วันที่จัดส่ง : </div>
+                            <div>จาก : </div>
+                            <div>ส่งถึง : </div>
+                            <div>สถานะ : </div>
                         </div>
                         <div class="column_cardcarRR">
                             <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px">

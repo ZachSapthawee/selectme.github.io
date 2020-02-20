@@ -8787,11 +8787,11 @@ footer .footer-copyright .footer-social i {
   font-size: 14px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .service-boxcar {
     /* height: 210px; */
     padding: 20px 0;
-    background: #d9d9d9;
+    background: #ebebeb;
     /* position: relative; */
   }
   .service-itemcar {
@@ -8835,18 +8835,16 @@ footer .footer-copyright .footer-social i {
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .service-boxcar {
-    /* height: 210px; */
-    padding: 20px 0;
-    background: #d9d9d9;
-    /* position: relative; */
+    padding: 20px 20px;
+    background: #ebebeb;
+    margin: 0px 100px;
   }
   .service-itemcar {
     height: 90px;
     padding: 20px 0;
     background: #f8f8f8;
-    /* position: relative; */
     text-align: start;
   }
   .service-itemcar {
@@ -8881,7 +8879,7 @@ footer .footer-copyright .footer-social i {
   .btn_select {
     margin: 8px 0px;
   }
-}
+} */
 
 .service-section .service-box .service-item .service-card {
   height: 210px;
