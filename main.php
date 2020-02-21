@@ -1,4 +1,4 @@
-<?php 
+<?php
     session_start();
     if($_SESSION["userLevel"]==""){
         alert("กรุณา Login ก่อน");
@@ -22,21 +22,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 <head>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/active.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SM_SELECT ME</title>
-    <meta name="keywords" content="ขนส่ง, รวมขนส่ง, บริการขนส่ง, ส่งด่วน, ส่งของTBL">  
+    <meta name="keywords" content="ขนส่ง, รวมขนส่ง, บริการขนส่ง, ส่งด่วน, ส่งของTBL">
     <meta name="description" content="การส่งของราคาถูก จองขนส่งและชำระค่าบริการออนไลน์ได้ทันที ที่สำคัญไม่ต้องจ้างขนส่งข้างนอกแพง">
-    <link rel="shortcut icon" href="img/smicon.png" type="image/x-icon"> 
+    <link rel="shortcut icon" href="img/smicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/fontpage.css">
 </head>
 <body>
 <header>
-    <?php include("header.php");?> 
+    <?php include("header.php");?>
 </header>
 
 
@@ -84,14 +84,14 @@
                 </div>
                 <?php }else{ ?>
                     <div class="service-item" >
-                    <div class="service-card"><a href="openbook.php" class="bug-service-card"></a> <img src="img/icon/icon_service_06.png" alt="รายงาน" height="65px">
+                    <div class="service-card"><a href="openbook.php" class="bug-service-card"></a> <img src="img/icon/icon_service_08.png" alt="รายงาน" height="65px">
                         <div class="title">เปิดการจอง</div>
                         <div class="service-caption">เลือกรถที่จะเปิดให้บริการ</div>
                     </div>
                 </div>
                 <div class="service-item" >
                     <div class="service-card"><a href="#" class="bug-service-card"></a> <img src="img/icon/icon_service_06.png" alt="รายงาน" height="65px">
-                        <div class="title">รายการทั้งหมก</div>
+                        <div class="title">รายการทั้งหมด</div>
                         <div class="service-caption">ดูรายละเอียดรถที่เปิดจอง และติดตามสถานะ</div>
                     </div>
                 </div>
@@ -108,6 +108,6 @@
             </div>
         </div>
     </section>
-    
+
 </body>
 </html>
