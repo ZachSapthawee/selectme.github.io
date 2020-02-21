@@ -136,8 +136,8 @@ function GetNameAgent($idAgent)
                     <img src="img/truck/6WHEELS_Truck.png" alt="" height="100px"><br><br>
                     <form action="" method>
                         Shipment No
-                        <input type="text" maxlength="9" style="width:200px" name="tracking_code" class="search-box" placeholder="กรอกหมายเลขติดตามการส่งสินค้า" autocomplete="off">
-                        <button class="login-btn" type="submit">ค้นหา</button>
+                        <input type="text" maxlength="9" style="width:150px" name="tracking_code" class="search-box" placeholder="กรอกหมายเลขติดตามการส่งสินค้า" autocomplete="off">
+                        <button style="width:50px" class="login-btn" type="submit">ค้นหา</button>
 
                     </form>
 
