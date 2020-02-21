@@ -22,7 +22,7 @@
                     <li class="li-menu"><a data-name="contact" href="contact.php">ติดต่อเรา</a></li>
                     <?php }else{ ?>
                         <li class="li-menu"><a data-name="home" href="openbook.php">เปิดการจองรถ</a></li>
-                    <li class="li-menu"><a data-name="home" href="#">รายการทั้งหมด</a></li>
+                    <li class="li-menu"><a data-name="home" href="listopen.php">รายการทั้งหมด</a></li>
                     <li class="li-menu"><a data-name="service" href="#">รายงานสรุป</a></li>
                  
                     <?php }?>
@@ -70,7 +70,7 @@
 </div>
 
 <div class="li-front-menu">
-    <a data-name="home" class="member-menu" href="#">
+    <a data-name="home" class="member-menu" href="listopen.php">
         รายการทั้งหมด </a>
 </div>
 
