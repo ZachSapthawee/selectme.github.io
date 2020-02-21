@@ -124,7 +124,7 @@ function GetNameAgent($idAgent)
     </header>
     <section class="service-section">
         <div class="wrapper-1000">
-            <h2>ใช้บริการ SelectMe</h2>
+            <h2>การสั่งซื้อสินค้า</h2>
             <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
 
 

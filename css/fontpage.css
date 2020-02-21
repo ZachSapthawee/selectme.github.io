@@ -11595,7 +11595,7 @@ section.dropoff-section .section-search .row-search-address:hover {
 
         /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-       #map {
+    #map {
         height: 100%;
     }
 
@@ -11611,4 +11611,23 @@ section.dropoff-section .section-search .row-search-address:hover {
         height: 500px;
         /* width: 600px; */
         margin: 50px;
+    }
+
+
+    table, td, th {  
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+    
+    th, td {
+      padding: 15px;
+    }
+
+    .table_Report{
+      margin: 30px 0;
     }

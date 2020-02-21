@@ -129,21 +129,22 @@ function GetNameAgent($idAgent)
     </section> -->
     <section class="service-section">
         <div class="wrapper-1000">
-            <h2>รายการที่ใช้บริการ</h2>
-            <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3>
+            <h2>ประวัติการใช้บริการ</h2>
+            <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
             <div class="service-box">
                 <div class="service-itemselect">
                     <div class="service-card_select">
                             <div class="col_left">
-                                    <div><b>หมายเลขสั่งซื้อ :</b></div>
-                                    <div><b>วันที่จัดส่ง : </b></div>
-                                    <div><b>จาก : </b></div>
-                                    <div><b>ส่งถึง : </b></div>
-                                    <div><b>สถานะ : </b></div>
+                                    <div><b">สถานะ : </b><b style="color:red">รอชำระเงิน</b></div>
+                                    <div><b>Shipment No : 200151807</b></div>
+                                    <div><b>วันที่จัดส่ง : 2/3/2020 10:18:01 AM </b></div>
+                                    <div><b>จาก : ธนสินซูเปอร์สโตร์ </b></div>
+                                    <div><b>ส่งถึง : หจก.ยู-เกียรย์สมาร์ทช๊อป</b></div>
+                                    
                             </div>
                             <div class="col_Right">
                                     <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
-                                    <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div>
+                                    <!-- <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div> -->
                             </div>
                     </div>
                 </div>
@@ -152,15 +153,49 @@ function GetNameAgent($idAgent)
                 <div class="service-itemselect">
                     <div class="service-card_select">
                             <div class="col_left">
-                                    <div><b>หมายเลขสั่งซื้อ :</b></div>
-                                    <div><b>วันที่จัดส่ง : </b></div>
-                                    <div><b>จาก : </b></div>
-                                    <div><b>ส่งถึง : </b></div>
-                                    <div><b>สถานะ : </b></div>
+                                    <div><b">สถานะ : </b><b style="color:cornflowerblue">ชำระเงินแล้ว</b></div>
+                                    <div><b>Shipment No : 200152954</b></div>
+                                    <div><b>วันที่จัดส่ง : 2/3/2020 12:19:43 PM</b></div>
+                                    <div><b>จาก : ธนสินซูเปอร์สโตร์ </b></div>
+                                    <div><b>ส่งถึง : หจก.พัฒนาทวีคูณ 2015</b></div>
+                                    
                             </div>
                             <div class="col_Right">
                                     <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
-                                    <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div>
+                                    <!-- <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div> -->
+                            </div>
+                    </div>
+                </div>
+                <div class="service-box">
+                <div class="service-itemselect">
+                    <div class="service-card_select">
+                            <div class="col_left">
+                                    <div><b">สถานะ : </b><b style="color:gold">กำลังจัดส่งสินค้า</b></div>
+                                    <div><b>Shipment No : 200154760</b></div>
+                                    <div><b>วันที่จัดส่ง : 2/3/2020 12:17:57 PM</b></div>
+                                    <div><b>จาก : ธนสินซูเปอร์สโตร์ </b></div>
+                                    <div><b>ส่งถึง : ร้านกังวานขนส่ง</b></div>
+                            </div>
+                            <div class="col_Right">
+                                    <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
+                                    <!-- <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div> -->
+                            </div>
+                    </div>
+                </div>
+                <div class="service-box">
+                <div class="service-itemselect">
+                    <div class="service-card_select">
+                            <div class="col_left">
+                                    <div><b">สถานะ : </b><b style="color:green">จัดส่งสำเร็จ</b></div>
+                                    <div><b>Shipment No : 200152960</b></div>
+                                    <div><b>วันที่จัดส่ง :  2/3/2020 4:45:13 PM</b></div>
+                                    <div><b>จาก : ธนสินซูเปอร์สโตร์ </b></div>
+                                    <div><b>ส่งถึง : ธิทธิชัยพานิจ</b></div>
+                                    
+                            </div>
+                            <div class="col_Right">
+                                    <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
+                                    <!-- <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div> -->
                             </div>
                     </div>
                 </div>

@@ -122,13 +122,12 @@ function GetNameAgent($idAgent)
 
     <section class="service-section">
         <div class="wrapper-1000">
-            <h2>Contact</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-            <div class="container">
+            <div class="container_contact">
+                <h2>Contact</h2>
             <div class="row">
 
                 <div class="col align-self-center">
-                    <img src="img/truck/Logo_SM_G.png" alt="" height="200px"><br><br>
+                    <img src="img/contact_ad.png" alt="" height="200px"><br><br>
                     
                 </div>
 

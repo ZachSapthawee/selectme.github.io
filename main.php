@@ -115,8 +115,8 @@
  
     <section class="service-section">
         <div class="wrapper-1000">
-            <h2>บริการของเรา</h2>
-            <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3>
+            <h2>SELECT ME</h2>
+            <h3>รวดเร็ว ฉับไว ใส่ใจบริการ</h3>
             <div class="service-box">
                 <div class="service-item">
                     <div class="service-card"><a href="selectme_member.php" class="bug-service-card"></a> <img src="img/icon/icon_service_01.png" alt="selectme" height="65px">
@@ -125,23 +125,36 @@
                     </div>
                 </div>
                 <div class="service-item">
-                    <div class="service-card"><a href="myrequest.php" class="bug-service-card"></a> <img src="img/icon/icon_service_02.png" alt="ประวัติการใช้บริการ">
+                    <div class="service-card"><a href="myrequest.php" class="bug-service-card"></a> <img src="img/icon/icon_service_02.png" alt="ประวัติการใช้บริการ" height="66px">
                         <div class="title">ประวัติการใช้บริการ</div>
                         <div class="service-caption">สรุปประวัติการใช้บริการ</div>
                     </div>
                 </div>
                 <div class="service-item">
-                    <div class="service-card"><a href="tracking.php" class="bug-service-card"></a> <img src="img/icon/icon_service_03.png" alt="สถานะสินค้า">
+                    <div class="service-card"><a href="tracking.php" class="bug-service-card"></a> <img src="img/icon/icon_service_03.png" alt="สถานะสินค้า" height="65px">
                         <div class="title">ติดตามสถานะ</div>
                         <div class="service-caption">ตรวจสอบสถานะการจัดส่งสินค้า</div>
                     </div>
                 </div>
                 <div class="service-item" >
-                    <div class="service-card"><a href="report.php" class="bug-service-card"></a> <img src="img/icon/icon_service_04.png" alt="รายงาน">
+                    <div class="service-card"><a href="report.php" class="bug-service-card"></a> <img src="img/icon/icon_service_05.png" alt="รายงาน" height="65px">
                         <div class="title">รายงาน</div>
                         <div class="service-caption">สรุปรายงาน</div>
                     </div>
                 </div>
+                <div class="service-item" >
+                    <div class="service-card"><a href="#" class="bug-service-card"></a> <img src="img/icon/icon_service_05.png" alt="รายงาน" height="65px">
+                        <div class="title">คะแนน</div>
+                        <div class="service-caption">สะสมไมล์เพื่อแลกส่วนลดพิเศษ</div>
+                    </div>
+                </div>
+                <div class="service-item" >
+                    <div class="service-card"><a href="#" class="bug-service-card"></a> <img src="img/icon/icon_service_05.png" alt="รายงาน" height="65px">
+                        <div class="title">โปรโมชั่น</div>
+                        <div class="service-caption">โปรโมชั่นสุดคุ้ม</div>
+                    </div>
+                </div>
+
                 <div class="clear-float">&nbsp;</div>
             </div>
         </div>

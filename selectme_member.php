@@ -116,17 +116,34 @@
     </header>
     <section class="service-section">
         <div class="wrapper-1000">
-            <h2>บริการของเรา</h2>
-            <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3>
+            <h2>ใช้บริการ SelectMe</h2>
+            <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
             <div class="service-box">
                 <div class="service-itemselect">
                     <div class="service-card_select">
                             <div class="col_left">
-                                    <div><b>หมายเลขสั่งซื้อ :</b></div>
-                                    <div><b>วันที่จัดส่ง : </b></div>
-                                    <div><b>จาก : </b></div>
-                                    <div><b>ส่งถึง : </b></div>
-                                    <div><b>สถานะ : </b></div>
+                                    <div><b>Shipment No : 200142510</b></div>
+                                    <div><b>วันและเวลาที่คาดว่าจะถึง : 1/31/2020 12:40:43 PM</b></div>
+                                    <div><b>ต้นทาง : NAKHONRATCHASIMA_RDC</b></div>
+                                    <div><b>ปลายทาง : ธนสินซูเปอร์สโตร์</b></div>
+                                    <div><b>ประเภทรถ : 4 ล้อ</b></div>
+                            </div>
+                            <div class="col_Right">
+                                    <img src="img/truck/4WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
+                                    <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-itemselect">
+                    <div class="service-card_select">
+                            <div class="col_left">
+                                    <div><b>Shipment No : 200148294</b></div>
+                                    <div><b>วันและเวลาที่คาดว่าจะถึง : 2/1/2020 12:59:05 PM</b></div>
+                                    <div><b>ต้นทาง : NAKHONRATCHASIMA_RDC</b></div>
+                                    <div><b>ปลายทาง : ธนสินซูเปอร์สโตร์</b></div>
+                                    <div><b>ประเภทรถ : 6 ล้อ</b></div>
                             </div>
                             <div class="col_Right">
                                     <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
@@ -139,11 +156,11 @@
                 <div class="service-itemselect">
                     <div class="service-card_select">
                             <div class="col_left">
-                                    <div><b>หมายเลขสั่งซื้อ :</b></div>
-                                    <div><b>วันที่จัดส่ง : </b></div>
-                                    <div><b>จาก : </b></div>
-                                    <div><b>ส่งถึง : </b></div>
-                                    <div><b>สถานะ : </b></div>
+                                    <div><b>Shipment No : 200151787</b></div>
+                                    <div><b>วันและเวลาที่คาดว่าจะถึง : 2/3/2020 10:21:12 AM</b></div>
+                                    <div><b>ต้นทาง : NAKHONRATCHASIMA_RDC</b></div>
+                                    <div><b>ปลายทาง : ธนสินซูเปอร์สโตร์</b></div>
+                                    <div><b>ประเภทรถ : 6 ล้อ</b></div>
                             </div>
                             <div class="col_Right">
                                     <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
@@ -152,6 +169,59 @@
                     </div>
                 </div>
             </div>
+            <div class="service-box">
+                <div class="service-itemselect">
+                    <div class="service-card_select">
+                            <div class="col_left">
+                                    <div><b>Shipment No :200148294</b></div>
+                                    <div><b>วันและเวลาที่คาดว่าจะถึง : 2/1/2020 12:59:05 PM</b></div>
+                                    <div><b>ต้นทาง : NAKHONRATCHASIMA_RDC</b></div>
+                                    <div><b>ปลายทาง : ธนสินซูเปอร์สโตร์</b></div>
+                                    <div><b>ประเภทรถ : 4 ล้อ</b></div>
+                            </div>
+                            <div class="col_Right">
+                                    <img src="img/truck/4WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
+                                    <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-itemselect">
+                    <div class="service-card_select">
+                            <div class="col_left">
+                                    <div><b>Shipment No :200151807</b></div>
+                                    <div><b>วันและเวลาที่คาดว่าจะถึง : 02/03/2020  10:18:01 AM</b></div>
+                                    <div><b>ต้นทาง : NAKHONRATCHASIMA_RDC</b></div>
+                                    <div><b>ปลายทาง : ธนสินซูเปอร์สโตร์</b></div>
+                                    <div><b>ประเภทรถ : 6 ล้อ</b></div>
+                            </div>
+                            <div class="col_Right">
+                                    <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
+                                    <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-itemselect">
+                    <div class="service-card_select">
+                            <div class="col_left">
+                                    <div><b>Shipment No :200152923</b></div>
+                                    <div><b>วันและเวลาที่คาดว่าจะถึง : 2/3/2020 12:16:12 PM</b></div>
+                                    <div><b>ต้นทาง : NAKHONRATCHASIMA_RDC</b></div>
+                                    <div><b>ปลายทาง : ธนสินซูเปอร์สโตร์</b></div>
+                                    <div><b>ประเภทรถ : 4 ล้อ</b></div>
+                            </div>
+                            <div class="col_Right">
+                                    <img src="img/truck/4WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
+                                    <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </section>
 
