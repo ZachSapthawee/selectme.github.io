@@ -145,7 +145,7 @@ function GetNameAgent($idAgent)
                         <div class="row">
 
                             <div class="col align-self-center">
-                                <div id="map"></div>
+                                <!-- <div id="map"></div> -->
 
                             </div>
 
