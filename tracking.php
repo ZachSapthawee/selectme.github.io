@@ -44,7 +44,7 @@ function GetNameAgent($idAgent)
 
 <body>
     <header>
-        <?php include("header.php");?> 
+        <?php include("header.php"); ?>
     </header>
 
     <section>
@@ -59,56 +59,37 @@ function GetNameAgent($idAgent)
                         Shipment No
                         <input type="text" maxlength="9" style="width:150px" name="tracking_code" class="search-box" placeholder="กรอกหมายเลขติดตามการส่งสินค้า" autocomplete="off">
                         <button style="width:50px" class="login-btn" type="submit">ค้นหา</button>
-
                     </form>
 
                     <div class="container">
-                        <div class="row">
-                            <div class="col align-self-center">
-                                <!-- <div id="map"></div> -->
-                                <div class="swiper-wrapper timeline">
-                                    <div class="swiper-slide" v-for="item in steps">
-                                        <div class="timestamp">
-                                            <span class="date">RDC<span>
-                                        </div>
-                                        <div class="status">
-                                            <span>RDC</span>
-                                        </div>
-                                    </div>
+                        <ul class="timeline">
+                            <li class="active">NAKHONRATCHASIMA_RDC</li>
+                            <li class="active">กำลังเดินทาง</li>
+                            <li>ธนสินซูเปอร์สโตร์</li>
+                        </ul>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-itemselect">
+                            <div class="service-card_select">
+                                <div class="col_left">
+                                    <div><b>Shipment No : 200142510</b></div>
+                                    <div><b>วันและเวลาที่คาดว่าจะถึง : 1/31/2020 12:40:43 PM</b></div>
+                                    <div><b>ต้นทาง : NAKHONRATCHASIMA_RDC</b></div>
+                                    <div><b>ปลายทาง : ธนสินซูเปอร์สโตร์</b></div>
+                                    <div><b>ประเภทรถ : 4 ล้อ</b></div>
                                 </div>
-
+                                <div class="col_Right">
+                                    <img src="img/truck/4WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
+                                    <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div>
+                                </div>
                             </div>
-
                         </div>
                     </div>
-
+                    
                 </div>
-
             </div>
         </div>
 
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col align-self-center">
-                    <div class="container">
-                        <div class="row">
-
-                            <div class="col align-self-center">
-                                <!-- <div id="map"></div> -->
-
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
     </section>
 
     <script>
@@ -168,37 +149,8 @@ function GetNameAgent($idAgent)
 
         }
     </script>
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa_CaAMgAL1Bns5vPeP9kZjQu2dBpJkUA&callback=initMap" async defer></script>
-<script>
-    const data = [
-        { dateLabel: 'January 2017', title: 'Gathering Information' },
-        { dateLabel: 'February 2017', title: 'Planning' },
-        { dateLabel: 'March 2017', title: 'Design' },
-        { dateLabel: 'April 2017', title: 'Content Writing and Assembly' },
-        { dateLabel: 'May 2017', title: 'Coding' },
-        { dateLabel: 'June 2017', title: 'Testing, Review & Launch' },
-        { dateLabel: 'July 2017', title: 'Maintenance' }
-    ];
 
-new Vue({
-    el: '#app', 
-    data: {
-        steps: data,
-    },
-    mounted() {
-        var swiper = new Swiper('.swiper-container', {
-        //pagination: '.swiper-pagination',
-        slidesPerView: 4,
-        paginationClickable: true,
-        grabCursor: true,
-        paginationClickable: true,
-        nextButton: '.next-slide',
-        prevButton: '.prev-slide',
-        });    
-    }
-})
-</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa_CaAMgAL1Bns5vPeP9kZjQu2dBpJkUA&callback=initMap" async defer></script>
 </body>
 
 </html>
