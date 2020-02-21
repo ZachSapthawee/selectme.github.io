@@ -1,1 +1,17 @@
-@media screen
+@media screen and (max-width: 375px) {
+    .section h2 {
+        font-family: cloud_light;
+        font-size: 1.8em;
+        color: #0b9dd2;
+        margin: 5px 0;
+        padding-bottom: 5px;
+    }
+    section h3 {
+        font-family: cloud_light;
+        font-size: 1em;
+        font-weight: 700;
+        color: #58595b;
+        margin-top: -5px;
+        margin-bottom: 25px;
+    }
+}
