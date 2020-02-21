@@ -124,46 +124,19 @@ function GetNameAgent($idAgent)
         <div class="wrapper-1000">
             <h2>Contact</h2>
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-            <div class="service-box">
-                <div>
+            <div class="container">
+            <div class="row">
+
+                <div class="col align-self-center">
+                    <img src="img/truck/Logo_SM_G.png" alt="" height="200px"><br><br>
                     
                 </div>
+
             </div>
         </div>
-    </section>
-    <section class="service-section">
-        <div class="wrapper-1000">
-            <h2>บริการของเรา</h2>
-            <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3>
-            <div class="service-box">
-                <div class="service-item">
-                    <div class="service-card"><a href="selectme_member.php" class="bug-service-card"></a> <img src="//www.shippop.com/assets/images/frontpage/icon_service_01.png?v=1496789498" alt="เปรียบเทียบราคา">
-                        <div class="title">ใช้บริการ Select Me</div>
-                        <div class="service-caption">เลือกใช้บริการจองรถ</div>
-                    </div>
-                </div>
-                <div class="service-item">
-                    <div class="service-card"><a href="myrequest.php" class="bug-service-card"></a> <img src="img/icon/icon_service_04.png" alt="ขนส่งที่เหมาะ">
-                        <div class="title">ประวัติการใช้บริการ</div>
-                        <div class="service-caption">สรุปประวัติการใช้บริการ</div>
-                    </div>
-                </div>
-                <div class="service-item">
-                    <div class="service-card"><a href="tracking.php" class="bug-service-card"></a> <img src="//www.shippop.com/assets/images/frontpage/icon_service_05.png?v=1496789498" alt="ติดตามพัสดุ">
-                        <div class="title">ติดตามสถานะ</div>
-                        <div class="service-caption">ตรวจสอบสถานะการจัดส่งสินค้า</div>
-                    </div>
-                </div>
-                <div class="service-item"  id="service_06" style="display: block;">
-                    <div class="service-card"> <a href="report.php" class="bug-service-card"></a><img src="//www.shippop.com/assets/images/frontpage/icon_service_06.png?v=1496789498" alt="คุมรายจ่ายง่ายขึ้น">
-                        <div class="title">รายงาน</div>
-                        <div class="service-caption">สรุปรายงาน</div>
-                    </div>
-                </div>
-                <div class="clear-float">&nbsp;</div>
-            </div>
         </div>
     </section>
+
 
 </body>
 
