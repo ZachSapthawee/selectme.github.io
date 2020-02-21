@@ -26,7 +26,7 @@ function GetNameAgent($idAgent)
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -91,7 +91,6 @@ function GetNameAgent($idAgent)
                             <a data-name="home" class="member-menu active" href="main.php">
                                 หน้าแรก </a>
                         </div>
-
                         <div class="li-front-menu">
                             <a data-name="contact" class="member-menu " href="contact.php">
                                 ติดต่อเรา </a>
@@ -101,7 +100,6 @@ function GetNameAgent($idAgent)
                 </div>
                 <div class="right-menu">
                     <div>
-
                         <div class="right-sub-right-menu">
                             ชื่อผู้ใช้ : <b> <?php if ($_SESSION['userLevel'] == "agent") {
                                                     echo GetNameAgent($_SESSION['agentId']);
@@ -112,7 +110,6 @@ function GetNameAgent($idAgent)
                             <a href="logout.php"><button type="button" class="login-btn" style="width:110px;"> ออกจากระบบ </button> </a>
                         </div>
                     </div>
-
                     <div class="clear-float"></div>
                     <div style="margin-top:7px;">
                         <form action="#" method="get">
@@ -125,159 +122,15 @@ function GetNameAgent($idAgent)
             </div>
         </div>
     </header>
-
-    <section>
-        <h2>ติดตามการจัดส่งสินค้า</h2>
-        <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3>
-        <div class="container">
-            <div class="row">
-
-                <div class="col align-self-center">
-                    <img src="img/truck/6WHEELS_Truck.png" alt="" height="100px"><br><br>
-                    <form action="" method>
-                        Shipment No
-                        <input type="text" maxlength="9" style="width:200px" name="tracking_code" class="search-box" placeholder="กรอกหมายเลขติดตามการส่งสินค้า" autocomplete="off">
-                        <button class="login-btn" type="submit">ค้นหา</button>
-
-                    </form>
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col align-self-center">
-                                <!-- <div id="map"></div> -->
-                                <div class="swiper-wrapper timeline">
-                                    <div class="swiper-slide" v-for="item in steps">
-                                        <div class="timestamp">
-                                            <span class="date">RDC<span>
-                                        </div>
-                                        <div class="status">
-                                            <span>RDC</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col align-self-center">
-                    <div class="container">
-                        <div class="row">
-
-                            <div class="col align-self-center">
-                                <!-- <div id="map"></div> -->
+    <section class="service-section">
+        <div class="wrapper-1000">
+            <h2>โปรโมชั่น</h2>
+            <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
 
 
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
         </div>
     </section>
 
-    <script>
-        var jsonObj = [{
-                "location": "Ontrade 2",
-                "lat": "15.071245",
-                "lng": "102.201012"
-            },
-            {
-                "location": "ห้างหุ้นส่วนจำกัด พิพัฒนโชติ",
-                "lat": "15.03577",
-                "lng": "102.117808"
-            },
-            {
-                "location": "บจก.มั่นทรัพย์เจริญ เซอร์วิส",
-                "lat": "14.993942",
-                "lng": "102.096508"
-            },
-            {
-                "location": "หจก.เสรีวัฒน์ การสุรา",
-                "lat": "14.977936",
-                "lng": "102.094431"
-            }
-        ]
-
-        function initMap() {
-            var mapOptions = {
-                center: {
-                    lat: 15.026709,
-                    lng: 102.135567
-                },
-                zoom: 11,
-            }
-
-            var maps = new google.maps.Map(document.getElementById("map"), mapOptions);
-
-            var marker, info;
-
-            $.each(jsonObj, function(i, item) {
-
-                marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(item.lat, item.lng),
-                    map: maps,
-                    title: item.location
-                });
-
-                info = new google.maps.InfoWindow();
-
-                google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                    return function() {
-                        info.setContent(item.location);
-                        info.open(maps, marker);
-                    }
-                })(marker, i));
-
-            });
-
-        }
-    </script>
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa_CaAMgAL1Bns5vPeP9kZjQu2dBpJkUA&callback=initMap" async defer></script>
-<script>
-    const data = [
-        { dateLabel: 'January 2017', title: 'Gathering Information' },
-        { dateLabel: 'February 2017', title: 'Planning' },
-        { dateLabel: 'March 2017', title: 'Design' },
-        { dateLabel: 'April 2017', title: 'Content Writing and Assembly' },
-        { dateLabel: 'May 2017', title: 'Coding' },
-        { dateLabel: 'June 2017', title: 'Testing, Review & Launch' },
-        { dateLabel: 'July 2017', title: 'Maintenance' }
-    ];
-
-new Vue({
-    el: '#app', 
-    data: {
-        steps: data,
-    },
-    mounted() {
-        var swiper = new Swiper('.swiper-container', {
-        //pagination: '.swiper-pagination',
-        slidesPerView: 4,
-        paginationClickable: true,
-        grabCursor: true,
-        paginationClickable: true,
-        nextButton: '.next-slide',
-        prevButton: '.prev-slide',
-        });    
-    }
-})
-</script>
 </body>
 
 </html>
