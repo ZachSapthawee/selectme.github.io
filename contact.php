@@ -59,7 +59,7 @@ function GetNameAgent($idAgent)
 
                 <div class="col align-self-center">
                     <img src="img/contact_ad.png" alt="" height="200px"><br><br>
-                    
+                    <div id="map"></div>
                 </div>
 
             </div>
@@ -67,7 +67,50 @@ function GetNameAgent($idAgent)
         </div>
     </section>
 
+    <script>
+        var jsonObj = [{
+                "location": "Ontrade 2",
+                "lat": "13.801184",
+                "lng": "100.559985"
+            }
+        ]
 
+        function initMap() {
+            var mapOptions = {
+                center: {
+                    lat: 13.801184,
+                    lng: 100.559985
+                },
+                zoom: 18,
+            }
+
+            var maps = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+            var marker, info;
+
+            $.each(jsonObj, function(i, item) {
+
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(item.lat, item.lng),
+                    map: maps,
+                    title: item.location
+                });
+
+                info = new google.maps.InfoWindow();
+
+                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                    return function() {
+                        info.setContent(item.location);
+                        info.open(maps, marker);
+                    }
+                })(marker, i));
+
+            });
+
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa_CaAMgAL1Bns5vPeP9kZjQu2dBpJkUA&callback=initMap" async defer></script>
 </body>
 
 </html>

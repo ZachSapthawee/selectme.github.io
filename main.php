@@ -84,20 +84,20 @@
                 </div>
                 <?php }else{ ?>
                     <div class="service-item" >
-                    <div class="service-card"><a href="openbook.php" class="bug-service-card"></a> <img src="img/icon/icon_service_06.png" alt="รายงาน" height="65px">
+                    <div class="service-card"><a href="openbook.php" class="bug-service-card"></a> <img src="img/icon/icon_service_08.png" alt="รายงาน" height="65px">
                         <div class="title">เปิดการจอง</div>
                         <div class="service-caption">เลือกรถที่จะเปิดให้บริการ</div>
                     </div>
                 </div>
                 <div class="service-item" >
-                    <div class="service-card"><a href="#" class="bug-service-card"></a> <img src="img/icon/icon_service_06.png" alt="รายงาน" height="65px">
-                        <div class="title">โปรโมชั่น</div>
-                        <div class="service-caption">โปรโมชั่นสุดคุ้ม</div>
+                    <div class="service-card"><a href="#" class="bug-service-card"></a> <img src="img/icon/icon_service_09.png" alt="รายงาน" height="65px">
+                        <div class="title">รายการทั้งหมด</div>
+                        <div class="service-caption">รายการรถที่เปิดให้จอง</div>
                     </div>
                 </div>
                 <div class="service-item" >
-                    <div class="service-card"><a href="#" class="bug-service-card"></a> <img src="img/icon/icon_service_06.png" alt="รายงาน" height="65px">
-                        <div class="title">โปรโมชั่น</div>
+                    <div class="service-card"><a href="#" class="bug-service-card"></a> <img src="img/icon/icon_service_10.png" alt="รายงาน" height="65px">
+                        <div class="title">รายงานสรุป</div>
                         <div class="service-caption">โปรโมชั่นสุดคุ้ม</div>
                     </div>
                 </div>

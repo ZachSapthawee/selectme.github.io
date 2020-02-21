@@ -43,94 +43,57 @@ function GetNameAgent($idAgent)
 </head>
 
 <body>
-    <header>
-        <div class="top_menu_mobile_toggle">
-            <div class="header-mobile">
-                <div class="padding-mobile">
-                    <div class="left-menu">
-                        <a class="logo-mobile" href="main.php" title="SELECTME"><img alt="SELECTME" height="32" src="img/Logo_SM.png"></a>
-                    </div>
-                    <div class="right-menu">
-                        <a data-name="shortcut-tracking" class="a-mobile" href="tracking.php"><i class="fa fa-truck fa-2x "></i></a>
-                        <a data-name="shortcut-openmenu" class="a-mobile show-menu-mobile" href="#"><i class="fa fa-bars fa-2x"></i></a>
-                    </div>
-                    <div class="clear-float"></div>
-                </div>
-            </div>
-            <div class="toolbar ">
-                <ul class="main-menu">
-                    <li class="li-header">ชื่อผู้ใช้ : <?php if ($_SESSION['userLevel'] == "agent") {
-                                                            echo GetNameAgent($_SESSION['agentId']);
-                                                        } else {
-                                                            echo "คุณวิน (Admin)";
-                                                        } ?> <br></li>
-                    <li class="li-menu"><a data-name="home" href="tracking.php">ติดตามสถานะ</a></li>
-                    <li class="li-menu"><a data-name="contact" href="contact.php">ติดต่อเรา</a></li>
-                    <li class="li-menu"><a data-name="sum" href="report.php">รายงาน</a></li>
-                    <li class="li-menu"><a data-name="logout" href="logout.php" style="color:red;">ออกจากระบบ</a></li>
-
-                    <div class="clear-float"></div>
-                    <li class="li-etc">
-                        <div>
-                            <span style="font-weight:800">ติดต่อเรา</span><br>
-                            บริษัท ไทยเบฟเวอเรจ จำกัด (มหาชน)
-                            เลขที่ 14 ถนนวิภาวดีรังสิต แขวงจอมพล เขตจตุจักรกรุงเทพมหานคร 10900<br>
-                            <br>
-                            โทร. (02) 785 5555<br>
-                            Facebook : www.facebook.com/ThaiBeverage </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="nav-full">
-            <div class="inner-nav-full">
-                <div class="left-menu">
-                    <a href="main.php" title="SMselectmelogo"><img class="logo-shippop" alt="SMselectmelogo" src="img/Logo_SM.png"></a>
-                    <nav>
-                        <div class="li-front-menu">
-                            <a data-name="home" class="member-menu active" href="main.php">
-                                หน้าแรก </a>
-                        </div>
-                        <div class="li-front-menu">
-                            <a data-name="contact" class="member-menu " href="contact.php">
-                                ติดต่อเรา </a>
-                        </div>
-                        <div class="clear-float"></div>
-                    </nav>
-                </div>
-                <div class="right-menu">
-                    <div>
-                        <div class="right-sub-right-menu">
-                            ชื่อผู้ใช้ : <b> <?php if ($_SESSION['userLevel'] == "agent") {
-                                                    echo GetNameAgent($_SESSION['agentId']);
-                                                } else {
-                                                    echo "คุณวิน (Admin)";
-                                                } ?>
-                            </b>
-                            <a href="logout.php"><button type="button" class="login-btn" style="width:110px;"> ออกจากระบบ </button> </a>
-                        </div>
-                    </div>
-                    <div class="clear-float"></div>
-                    <div style="margin-top:7px;">
-                        <form action="#" method="get">
-
-                            <input type="text" name="tracking_code" class="search-box" placeholder="กรอกหมายเลขติดตามการส่งสินค้า" autocomplete="off">
-                            <button class="btn-search"><img alt="" src="//www.shippop.com/assets/images/frontpage/icon_search.png?v=1.03484"></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+<header>
+    <?php include("header.php");?> 
+</header>
     <section class="service-section">
         <div class="wrapper-1000">
             <h2>รายงานสรุปการใช้บริการ</h2>
             <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
-
+            <canvas id="myChart" width="400" height="400"></canvas>
 
         </div>
     </section>
 
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
 </body>
 
 </html>
