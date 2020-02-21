@@ -30,7 +30,9 @@ function GetNameAgent($idAgent)
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
+
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/active.js"></script>
     <meta charset="UTF-8">
@@ -50,7 +52,7 @@ function GetNameAgent($idAgent)
         <div class="wrapper-1000">
             <h2>รายงานสรุปการใช้บริการ</h2>
             <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
-            <canvas id="myChart" width="400" height="400"></canvas>
+            <canvas id="myChart" width="200" height="200"></canvas>
 
         </div>
     </section>
