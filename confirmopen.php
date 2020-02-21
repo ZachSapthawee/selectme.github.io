@@ -31,8 +31,8 @@ function EditSatus($vid){
 
 function AddBook($s,$a){
     include("dblink.php");
-    $sql="INSERT INTO sm (shipmentNo, agentID, status )
-    VALUES ($s, $a, 'Open');";
+    $sql="INSERT INTO sm (shipmentNo, agentID, sm_status )
+    VALUES ($s, $a, 'open');";
     $query = mysqli_query($dbcon,$sql);
 }
 
