@@ -48,9 +48,8 @@ function GetNameAgent($idAgent)
     <?php include("header.php");?> 
     </header>
     <section class="service-section">
-        
     
-    <div class="container" width="70%">
+    <div class="container"style="margin:0 auto;" width="70%">
     <h2>ใช้บริการ SelectMe</h2>
              <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> 
   <table width="80%" class="table table-borderless table-striped">
