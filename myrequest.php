@@ -117,7 +117,7 @@ function GetNameAgent($idAgent)
             </div>
         </div>
     </header>
-
+<!-- 
     <section class="service-section">
         <div class="wrapper-1000">
             <h2>รายการที่ใช้บริการ</h2>
@@ -126,8 +126,47 @@ function GetNameAgent($idAgent)
                 
             </div>
         </div>
+    </section> -->
+    <section class="service-section">
+        <div class="wrapper-1000">
+            <h2>รายการที่ใช้บริการ</h2>
+            <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3>
+            <div class="service-box">
+                <div class="service-itemselect">
+                    <div class="service-card_select">
+                            <div class="col_left">
+                                    <div><b>หมายเลขสั่งซื้อ :</b></div>
+                                    <div><b>วันที่จัดส่ง : </b></div>
+                                    <div><b>จาก : </b></div>
+                                    <div><b>ส่งถึง : </b></div>
+                                    <div><b>สถานะ : </b></div>
+                            </div>
+                            <div class="col_Right">
+                                    <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
+                                    <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-itemselect">
+                    <div class="service-card_select">
+                            <div class="col_left">
+                                    <div><b>หมายเลขสั่งซื้อ :</b></div>
+                                    <div><b>วันที่จัดส่ง : </b></div>
+                                    <div><b>จาก : </b></div>
+                                    <div><b>ส่งถึง : </b></div>
+                                    <div><b>สถานะ : </b></div>
+                            </div>
+                            <div class="col_Right">
+                                    <img src="img/truck/6WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
+                                    <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-
 </body>
 
 </html>

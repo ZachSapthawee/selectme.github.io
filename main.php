@@ -119,7 +119,7 @@
             <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3>
             <div class="service-box">
                 <div class="service-item">
-                    <div class="service-card"><a href="selectme_member.php" class="bug-service-card"></a> <img src="//www.shippop.com/assets/images/frontpage/icon_service_01.png?v=1496789498" alt="เปรียบเทียบราคา">
+                    <div class="service-card"><a href="selectme_member.php" class="bug-service-card"></a> <img src="img/icon/icon_service_01.png" alt="เปรียบเทียบราคา" height="65px">
                         <div class="title">ใช้บริการ Select Me</div>
                         <div class="service-caption">เลือกใช้บริการจองรถ</div>
                     </div>
