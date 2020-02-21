@@ -8571,45 +8571,17 @@ footer .footer-copyright .footer-social i {
 
 /* //////////////////////////////////////////////////////////////////////   768px  ///////////////////////////////////////// */
 
-/* @media screen and (max-width: 768px) {
-  .checkprice {
-    width: 100%;
+@media screen and (max-width: 425px) {
+  .service-itemselect{
     display: block;
-    margin: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    position: relative;
-    top: 5px;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-    padding: 23px 10px 10px;
-  }
-  .checkprice .none-padding {
-    padding: 5px;
-  }
-  .checkprice label {
-    width: 100%;
-    text-align: center;
-  }
-  .checkprice .button-calculate-weight {
-    display: none;
-  }
-  .checkprice .checkprice-response {
-    margin: 0;
-    padding: 0 5px;
-    position: relative;
-  }
-  .checkprice .checkprice-response.active {
-    margin: 0;
-    padding: 0 5px;
-  }
-  .checkprice-response .footer {
-    border-radius: 5px;
-  }
-  .checkprice-response .footer .btn-more {
-    border-radius: 3px;
-  }
-} */
+    /* width: 600px; */
+    padding: 10px;
+    margin: 5px 10px;
+    font-size: 14px;
+    background: #f8f8f8;
+    border: 0.5px solid #d5d5d5;
+}
+}
 
 .testimonial-wrapper {
   padding-top: 10px;
@@ -8860,15 +8832,15 @@ footer .footer-copyright .footer-social i {
     }
   
 }
-.service-itemselect{
-  display: block;
-  width: 600px;
-  padding: 10px;
-  margin: 5px auto;
-  font-size: 14px;
-  background: #f8f8f8;
-  border: 0.5px solid #d5d5d5;
-}
+/* .service-itemselect{
+    display: block;
+    width: 600px;
+    padding: 10px;
+    margin: 5px 10px;
+    font-size: 14px;
+    background: #f8f8f8;
+    border: 0.5px solid #d5d5d5;
+} */
 .service-card_select{
   display: flex;
   font-size: 1em;
