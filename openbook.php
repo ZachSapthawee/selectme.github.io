@@ -18,8 +18,6 @@
         $query = mysqli_query($dbcon,$sql);
         $result = mysqli_fetch_array($query,MYSQLI_ASSOC);
         return $result['agent_name'];
-
-        
     }
 
 ?>
@@ -119,7 +117,6 @@
                     <div class="clear-float"></div>
                     <div style="margin-top:7px;">
                         <form action="#" method="get">
-                            
                             <input type="text" name="tracking_code" class="search-box" placeholder="กรอกหมายเลขติดตามการส่งสินค้า" autocomplete="off">
                             <button class="btn-search"><img alt="" src="//www.shippop.com/assets/images/frontpage/icon_search.png?v=1.03484"></button>
                         </form>
@@ -146,14 +143,16 @@
                 ON shipment.vehicle_id=vehicle.vehicle_id
                 INNER JOIN agent
                 ON agent.agent_id=shipment.agent_id
-                WHERE shipment.shipFrom = 'NAKHONRATCHASIMA_RDC'
+                WHERE shipment.shipFrom = 'NAKHONRATCHASIMA_RDC' 
+                AND vehicle.status = 'FREE'
                 ";
                 $query = mysqli_query($dbcon,$sql);
                 while($result = mysqli_fetch_assoc($query))
                 {
                 ?>
+
                 <div class="service-item">
-                    <div class="service-card"><a href="#" class="bug-service-card"></a><br> <img width="<?php 
+                    <div class="service-card"><a onclick="return confirm('ยืนยันเปิดให้จอง Shipment No : <?php echo $result['shipmentNo'];?> ')" href="confirmopen.php?sn=<?php echo $result['shipmentNo'];?>&vehid=<?php echo $result['vehicle_id'];?>&aid=<?php echo $result['agent_id'];?>" class="bug-service-card"></a><br> <img width="<?php 
                     if($result['vehicle_type']=="6w"){
                         echo "100px";
                     }elseif($result['vehicle_type']=="10w"){
@@ -180,11 +179,9 @@
             ?>
             
             </div>
-  
-
             <div class="clear-float">&nbsp;</div>
         </div>
     </section>
-    
+
 </body>
 </html>
