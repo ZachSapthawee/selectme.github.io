@@ -54,8 +54,7 @@ function GetNameAgent($idAgent)
             
              <iframe  width="80%" height="400px" src="tracking1.php" scrolling="no"></iframe> 
                     
-                   
-                  
+                             
     </section>
 
     <script>
