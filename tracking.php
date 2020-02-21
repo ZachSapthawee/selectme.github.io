@@ -44,7 +44,7 @@ function GetNameAgent($idAgent)
 
 <body>
     <header>
-        <?php include("header.php");?> 
+        <?php include("header.php"); ?>
     </header>
 
     <section>
@@ -59,67 +59,97 @@ function GetNameAgent($idAgent)
                         Shipment No
                         <input type="text" maxlength="9" style="width:150px" name="tracking_code" class="search-box" placeholder="กรอกหมายเลขติดตามการส่งสินค้า" autocomplete="off">
                         <button style="width:50px" class="login-btn" type="submit">ค้นหา</button>
-
                     </form>
 
                     <div class="container">
-                        <div class="row">
-
-                            <div class="col align-self-center">
-                                <!-- <div id="map"></div> -->
-
+                        <ul class="timeline">
+                            <li class="active">NAKHONRATCHASIMA_RDC</li>
+                            <li class="active">กำลังเดินทาง</li>
+                            <li>ธนสินซูเปอร์สโตร์</li>
+                        </ul>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-itemselect">
+                            <div class="service-card_select">
+                                <div class="col_left">
+                                    <div><b>Shipment No : 200142510</b></div>
+                                    <div><b>วันและเวลาที่คาดว่าจะถึง : 1/31/2020 12:40:43 PM</b></div>
+                                    <div><b>ต้นทาง : NAKHONRATCHASIMA_RDC</b></div>
+                                    <div><b>ปลายทาง : ธนสินซูเปอร์สโตร์</b></div>
+                                    <div><b>ประเภทรถ : 4 ล้อ</b></div>
+                                </div>
+                                <div class="col_Right">
+                                    <img src="img/truck/4WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
+                                    <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div>
+                                </div>
                             </div>
-
                         </div>
                     </div>
-
+                    
                 </div>
-
             </div>
         </div>
+
     </section>
+
     <script>
-            var jsonObj = [
-                {"location": "Ontrade 2","lat": "15.071245","lng": "102.201012"},
-                {"location": "ห้างหุ้นส่วนจำกัด พิพัฒนโชติ","lat": "15.03577","lng": "102.117808"},
-                {"location": "บจก.มั่นทรัพย์เจริญ เซอร์วิส","lat": "14.993942","lng": "102.096508"},
-                {"location": "หจก.เสรีวัฒน์ การสุรา","lat": "14.977936","lng": "102.094431"}
-            ]
-            
-            function initMap() {
-                var mapOptions = {
-                    center: {
-                        lat: 15.026709, 
-                        lng: 102.135567 
-                    },
-                    zoom: 11,
-                }
+        var jsonObj = [{
+                "location": "Ontrade 2",
+                "lat": "15.071245",
+                "lng": "102.201012"
+            },
+            {
+                "location": "ห้างหุ้นส่วนจำกัด พิพัฒนโชติ",
+                "lat": "15.03577",
+                "lng": "102.117808"
+            },
+            {
+                "location": "บจก.มั่นทรัพย์เจริญ เซอร์วิส",
+                "lat": "14.993942",
+                "lng": "102.096508"
+            },
+            {
+                "location": "หจก.เสรีวัฒน์ การสุรา",
+                "lat": "14.977936",
+                "lng": "102.094431"
+            }
+        ]
 
-                var maps = new google.maps.Map(document.getElementById("map"), mapOptions);
+        function initMap() {
+            var mapOptions = {
+                center: {
+                    lat: 15.026709,
+                    lng: 102.135567
+                },
+                zoom: 11,
+            }
 
-                var marker, info;
+            var maps = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-                $.each(jsonObj, function(i, item) {
+            var marker, info;
 
-                    marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(item.lat, item.lng),
-                        map: maps,
-                        title: item.location
-                    });
+            $.each(jsonObj, function(i, item) {
 
-                    info = new google.maps.InfoWindow();
-
-                    google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                        return function() {
-                            info.setContent(item.location);
-                            info.open(maps, marker);
-                        }
-                    })(marker, i));
-
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(item.lat, item.lng),
+                    map: maps,
+                    title: item.location
                 });
 
-            }
-        </script>
+                info = new google.maps.InfoWindow();
+
+                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                    return function() {
+                        info.setContent(item.location);
+                        info.open(maps, marker);
+                    }
+                })(marker, i));
+
+            });
+
+        }
+    </script>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa_CaAMgAL1Bns5vPeP9kZjQu2dBpJkUA&callback=initMap" async defer></script>
 </body>
 
