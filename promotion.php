@@ -54,15 +54,15 @@ function GetNameAgent($idAgent)
                 <img src="img/cover_promotion.jpg" alt="">
                 <div>
                     <button class="button_promotion1">
-                        โปรโมชั่น 1 <br>
+                        SelectMe ขนขน <br> <br>
                         ฿600.00
                     </button>
                     <button class="button_promotion2">
-                        โปรโมชั่น 2 <br>
+                        SelectMe เหมา เหมา <br>
                         ฿1,600.00
                     </button>
                     <button class="button_promotion3">
-                        โปรโมชั่น 3 <br>
+                        SelectMe คุ้ม คุ้ม <br> <br>
                         ฿1,800.00
                     </button>
                 </div>

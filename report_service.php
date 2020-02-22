@@ -62,10 +62,10 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['จำนวนการจอง', 'อยู่ระหว่างขนส่ง', 'ขนส่งสำเร็จ', 'ยกเลิกการจอง'],
+        labels: ['จำนวนการใช้บริการ', 'อัตราค่าบริการ', 'ระยะทางรวม'],
         datasets: [{
             label: 'รางานสรุปการใช้บริการ',
-            data: [100, 30, 68, 2],
+            data: [40, 12171.95, 927],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',

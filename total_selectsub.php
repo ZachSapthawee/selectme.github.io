@@ -65,18 +65,18 @@ function GetNameAgent($idAgent)
                     <div class="service-itemselect">
                         <div class="service-card_select">
                             <div class="col_left">
-                                <div><b>Shipment No : <?php echo $result['shipmentNo']; ?></b></div>
-                                <div><b>วันและเวลาที่คาดว่าจะถึง : <?php
-                                                                    $dateData = $result['date'];
-                                                                    $newdate = thai_date_short_number(strtotime($dateData));
-                                                                    echo $newdate; ?></b></div>
-                                <div><b>ต้นทาง : <?php echo $result['shipFrom']; ?></b></div>
-                                <div><b>ประเภทรถ : <?php if ($result['vehicle_type'] == "4w") {
+                                <div><b>Shipment No :</b> <?php echo $result['shipmentNo']; ?></div>
+                                <div><b>วันและเวลาที่คาดว่าจะถึง :</b> <?php
+                                                                    //$dateData = $result['date'];
+                                                                    //$newdate = thai_date_short_number(strtotime($dateData));
+                                                                   // echo $newdate; ?></div>
+                                <div><b>ต้นทาง : </b><?php echo $result['shipFrom']; ?></div>
+                                <div><b>ประเภทรถ :</b> <?php if ($result['vehicle_type'] == "4w") {
                                                         echo "4 ล้อ";
                                                     } else {
                                                         echo "6 ล้อ";
                                                     }
-                                                    ?></b></div>
+                                                    ?></div>
                             </div>
                             <div class="col_Right"></div>
                             <img src="<?php
@@ -89,9 +89,8 @@ function GetNameAgent($idAgent)
                                         } ?>" alt="รถบรรทุก" height="45px" style="margin: 10px;">
                             <!-- <div><a href="select_sub.php" class="btn btn-primary btn-sm"> ใช้งาน SelectMe</a></div>
                             </div> -->
-
-                            <div><a href="qrcode.php" class="btn btn-primary btn-sm"> ชำระเงิน</a></div>
                         </div>
+                        <div><a href="qrcode.php" class="btn btn-primary btn-sm"> ชำระเงิน</a></div>
                     </div>
                 </div>
 

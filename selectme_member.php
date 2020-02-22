@@ -1,25 +1,28 @@
-<?php 
-    session_start();
-    include("dateformat.php");
-    if($_SESSION["userLevel"]==""){
-        alert("กรุณา Login ก่อน");
-        backtoindex();
-        exit();
-    }
-    function alert($msg) {
-        echo "<script type='text/javascript'>alert('$msg');</script>";
-    }
-    function backtoindex(){
-        echo "<script>  window.location.href='index.php'; </script>";
-    }
-    
-    function GetNameAgent($idAgent){
-        include("dblink.php");
-        $sql = "SELECT agent.agent_name FROM agent JOIN login on agent.login_id = login.login_id where agent_id = '$idAgent'";
-        $query = mysqli_query($dbcon,$sql);
-        $result = mysqli_fetch_array($query,MYSQLI_ASSOC);
-        return $result['agent_name'];     
-    }
+<?php
+session_start();
+include("dateformat.php");
+if ($_SESSION["userLevel"] == "") {
+    alert("กรุณา Login ก่อน");
+    backtoindex();
+    exit();
+}
+function alert($msg)
+{
+    echo "<script type='text/javascript'>alert('$msg');</script>";
+}
+function backtoindex()
+{
+    echo "<script>  window.location.href='index.php'; </script>";
+}
+
+function GetNameAgent($idAgent)
+{
+    include("dblink.php");
+    $sql = "SELECT agent.agent_name FROM agent JOIN login on agent.login_id = login.login_id where agent_id = '$idAgent'";
+    $query = mysqli_query($dbcon, $sql);
+    $result = mysqli_fetch_array($query, MYSQLI_ASSOC);
+    return $result['agent_name'];
+}
 
 ?>
 <!DOCTYPE html>
@@ -42,7 +45,7 @@
 
 <body>
     <header>
-    <?php include("header.php");?> 
+        <?php include("header.php"); ?>
     </header>
     <section class="section_promo">
         <div class="wrapper-1000">
@@ -56,47 +59,46 @@
             JOIN vehicle 
             ON shipment.vehicle_id = vehicle.vehicle_id 
             WHERE sm.agentID = '$aid' AND sm.sm_status ='open'";
-            $query = mysqli_query($dbcon,$sql);
-            if(!$query){
+            $query = mysqli_query($dbcon, $sql);
+            if (!$query) {
             }
-            while($result = mysqli_fetch_assoc($query))
-                {
-                
+            while ($result = mysqli_fetch_assoc($query)) {
+
             ?>
-            <div class="service-box">
-                <div class="service-itemselect">
-                    <div class="service-card_select">
+                <div class="service-box">
+                    <div class="service-itemselect">
+                        <div class="service-card_select">
                             <div class="col_left">
-                                    <div><b>Shipment No : <?php echo $result['shipmentNo']; ?></b></div>
-                                    <div><b>วันและเวลาที่คาดว่าจะถึง : <?php
-                                        $dateData=$result['date'];
-                                        $newdate = thai_date_short_number(strtotime($dateData));
-                                        echo $newdate; ?></b></div>
-                                    <div><b>ต้นทาง : <?php echo $result['shipFrom']; ?></b></div>
-                                    <div><b>ประเภทรถ : <?php if($result['vehicle_type']=="4w"){ 
-                                        echo "4 ล้อ";
-                                    }else{
-                                        echo "6 ล้อ"; 
-                                    }
-                                ?></b></div>
+                                <div><b>Shipment No : </b><?php echo $result['shipmentNo']; ?></div>
+                                <div><b>วันและเวลาที่คาดว่าจะถึง : </b><?php
+                                                                        $dateData = $result['date'];
+                                                                        $newdate = thai_date_short_number(strtotime($dateData));
+                                                                        echo $newdate; ?></div>
+                                <div><b>ต้นทาง : </b><?php echo $result['shipFrom']; ?></div>
+                                <div><b>ประเภทรถ : </b> <?php if ($result['vehicle_type'] == "4w") {
+                                                            echo "4 ล้อ";
+                                                        } else {
+                                                            echo "6 ล้อ";
+                                                        }
+                                                        ?></div>
                             </div>
                             <div class="col_Right"></div>
-                                    <img src="<?php 
-                    if($result['vehicle_type']=="6w"){
-                        echo "img/truck/6WHEELS_Truck.png";
-                    }elseif($result['vehicle_type']=="10w"){
-                        echo "img/truck/10WHEELS_Truck.png";
-                    }else{
-                        echo "img/truck/4WHEELS_Truck.png";
-                    } ?>" alt="รถบรรทุก" height="45px" style="margin: 10px;">
-                                    <div><a href="select_sub.php" class="btn btn-primary btn-sm"> ใช้งาน SelectMe</a></div>
-                            </div>
+                            <img src="<?php
+                                        if ($result['vehicle_type'] == "6w") {
+                                            echo "img/truck/6WHEELS_Truck.png";
+                                        } elseif ($result['vehicle_type'] == "10w") {
+                                            echo "img/truck/10WHEELS_Truck.png";
+                                        } else {
+                                            echo "img/truck/4WHEELS_Truck.png";
+                                        } ?>" alt="รถบรรทุก" height="45px" style="margin: 10px;">
+                            <div><a href="select_sub.php" class="btn btn-primary btn-sm"> ใช้งาน SelectMe</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <?php } ?>
         </div>
+
+    <?php } ?>
+    </div>
     </section>
 
 </body>
