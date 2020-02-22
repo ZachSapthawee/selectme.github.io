@@ -68,10 +68,10 @@ function GetNameAgent($idAgent)
                     <div class="service-card_select">
                             <div class="col_left">
                                     <div><b">สถานะ : </b><b style="color:cornflowerblue">ชำระเงินแล้ว</b></div>
-                                    <div><b>Shipment No : 200152954</b></div>
+                                    <div><b>Shipment No : 200003922</b></div>
                                     <div><b>วันที่จัดส่ง : 25/02/2563</b></div>
                                     <div><b>จาก : ธนสินซูเปอร์สโตร์ </b></div>
-                                    <div><b>ส่งถึง : หจก.บุรีรัมย์ศรีสงวน</b></div>
+                                    <div><b>ส่งถึง : ร้านสิทธิชัยพานิชย์,ร้านเฮียเพียว,ห้างหุ้นส่วนจำกัด ยู-เกียสมาร์ทช๊อป</b></div>
                                     
                             </div>
                             <div class="col_Right">
@@ -84,9 +84,9 @@ function GetNameAgent($idAgent)
                 <div class="service-itemselect">
                     <div class="service-card_select">
                             <div class="col_left">
-                                    <div><b">สถานะ : </b><b style="color:green">กำลังจัดส่งสินค้า</b></div>
+                                    <div><b">สถานะ : </b><b style="color:green">ส่งงานสำเร็จ</b></div> 
                                     <div><b>Shipment No : 200154760</b></div>
-                                    <div><b>วันที่จัดส่ง : 20/02/2563</b></div>
+                                    <div><b>วันที่จัดส่ง : 17/02/2563</b></div>
                                     <div><b>จาก : ธนสินซูเปอร์สโตร์ </b></div>
                                     <div><b>ส่งถึง : หจก.บุรีรัมย์ศรีสงวน</b></div>
                             </div>
@@ -102,7 +102,7 @@ function GetNameAgent($idAgent)
                             <div class="col_left">
                                     <div><b">สถานะ : </b><b style="color:green">ส่งงานสำเร็จ</b></div>
                                     <div><b>Shipment No : 200152960</b></div>
-                                    <div><b>วันที่จัดส่ง : 20/02/2563</b></div>
+                                    <div><b>วันที่จัดส่ง : 4/02/2563</b></div>
                                     <div><b>จาก : ธนสินซูเปอร์สโตร์ </b></div>
                                     <div><b>ส่งถึง : หจก.บุรีรัมย์ศรีสงวน</b></div>
                                     

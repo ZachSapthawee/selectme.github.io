@@ -55,7 +55,7 @@
 </div>
 
 <div class="li-front-menu">
-    <a data-name="home" class="member-menu" href="selectme_member.php">
+    <a data-name="home" class="member-menu" href="process1.php">
         บริการ SelectMe </a>
 </div>
 <div class="li-front-menu">
