@@ -22,8 +22,8 @@
         <div class="row">
             <div class="col col-sm-2 col-md-10 col-lg-10 " style="text-align: center">
                 <img src="img/truck/6WHEELS_Truck.png" alt="" height="60%"><br><br>
-                <form action="tracking2.php" method>
-                Shipment No <input type="text" maxlength="9" style="width:150px" name="tracking_code" class="search-box" placeholder="กรอกหมายเลขติดตามการส่งสินค้า" autocomplete="off">
+                <form action="tracking2.php" method="$_GET">
+                Shipment No <input type="text" maxlength="9" style="width:150px" name="sn" class="search-box" placeholder="กรอกหมายเลขติดตามการส่งสินค้า" autocomplete="off">
         <button style="width:50px" class="login-btn" type="submit">ค้นหา</button>
  </div>
  </div>

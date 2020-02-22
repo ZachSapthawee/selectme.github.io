@@ -125,32 +125,55 @@ function GetNameAgent($idAgent)
             <h2>รายงาน</h2>
             <h3>สรุปรายงาน</h3>
             <div class="service-box">
-                <div class="service-item">
-                    <div class="service-card"><a href="report_service.php" class="bug-service-card"></a> <img src="img/icon/icon_service_01.png" alt="selectme" height="65px">
-                        <div class="title">รายงานสรุปการใช้บริการ</div>
-                        <!-- <div class="service-caption">เลือกใช้บริการจองรถ</div> -->
-                    </div>
-                </div>
-                <div class="service-item">
-                    <div class="service-card"><a href="report_status_sale.php" class="bug-service-card"></a> <img src="img/icon/icon_service_02.png" alt="ประวัติการใช้บริการ" height="66px">
-                        <div class="title">รายงานสถานะการสั่งซื้อ</div>
-                        <!-- <div class="service-caption">สรุปประวัติการใช้บริการ</div> -->
-                    </div>
-                </div>
-                <div class="service-item" >
-                    <div class="service-card"><a href="report_sale_order.php" class="bug-service-card"></a> <img src="img/icon/icon_service_05.png" alt="รายงาน" height="65px">
-                        <div class="title">การสั่งซื้อสินค้า</div>
-                        <!-- <div class="service-caption">สรุปรายงาน</div> -->
-                    </div>
-                </div>
-                <!-- <div class="service-item" >   
-                    <div class="service-card"><a href="report.php" class="bug-service-card"></a> <img src="img/icon/icon_service_01.png" alt="รายงาน" height="65px">
-                        <div class="title">รายงานการใช้รถ SelectMe</div>
-                        <div class="service-caption">โปรโมชั่นสุดคุ้ม</div>
-                    </div>
-                </div> 
-            
-        admin-->
+            <?php if($_SESSION['userLevel']=="agent"){ ?>
+                        <div class="service-item">
+                            <div class="service-card"><a href="report_service.php" class="bug-service-card"></a> <img src="img/icon/icon_service_01.png" alt="selectme" height="65px">
+                                <div class="title">รายงานสรุปการใช้บริการ</div>
+                                <!-- <div class="service-caption">เลือกใช้บริการจองรถ</div> -->
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-card"><a href="report_status_sale.php" class="bug-service-card"></a> <img src="img/icon/icon_service_02.png" alt="ประวัติการใช้บริการ" height="66px">
+                                <div class="title">รายงานสถานะการสั่งซื้อ</div>
+                                <!-- <div class="service-caption">สรุปประวัติการใช้บริการ</div> -->
+                            </div>
+                        </div>
+                        <div class="service-item" >
+                            <div class="service-card"><a href="report_sale_order.php" class="bug-service-card"></a> <img src="img/icon/icon_service_05.png" alt="รายงาน" height="65px">
+                                <div class="title">การสั่งซื้อสินค้า</div>
+                                <!-- <div class="service-caption">สรุปรายงาน</div> -->
+                            </div>
+                        </div>
+
+                <?php }else{ ?>
+
+                    <div class="service-item">
+                            <div class="service-card"><a href="report_service.php" class="bug-service-card"></a> <img src="img/icon/icon_service_01.png" alt="selectme" height="65px">
+                                <div class="title">รายงานสรุปการใช้บริการ</div>
+                                <!-- <div class="service-caption">เลือกใช้บริการจองรถ</div> -->
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-card"><a href="report_status_sale.php" class="bug-service-card"></a> <img src="img/icon/icon_service_02.png" alt="ประวัติการใช้บริการ" height="66px">
+                                <div class="title">รายงานสถานะการสั่งซื้อ</div>
+                                <!-- <div class="service-caption">สรุปประวัติการใช้บริการ</div> -->
+                            </div>
+                        </div>
+                        <div class="service-item" >
+                            <div class="service-card"><a href="report_sale_order.php" class="bug-service-card"></a> <img src="img/icon/icon_service_05.png" alt="รายงาน" height="65px">
+                                <div class="title">การสั่งซื้อสินค้า</div>
+                                <!-- <div class="service-caption">สรุปรายงาน</div> -->
+                            </div>
+                        </div>
+
+                        <div class="service-item" >   
+                            <div class="service-card"><a href="#" class="bug-service-card"></a> <img src="img/icon/icon_service_11.png" alt="รายงาน" height="65px">
+                                <div class="title">รายงานการใช้รถ SelectMe</div>
+                                <!-- <div class="service-caption"></div> -->
+                            </div>
+                        </div> 
+
+                <?php }?>
 
                 <div class="clear-float">&nbsp;</div>
             </div>

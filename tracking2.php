@@ -1,3 +1,6 @@
+<?php
+    $shipmentNo = $_GET['sn'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -31,7 +34,7 @@
                     <div class="service-itemselect">
                         <div class="service-card_select">
                             <div class="col_left">
-                                <div><b>Shipment No : 200142510</b></div>
+                                <div><b>Shipment No : <?php echo $shipmentNo; ?></b></div>
                                 <div><b>วันและเวลาที่คาดว่าจะถึง : 1/31/2020 12:40:43 PM</b></div>
                                 <div><b>ต้นทาง : NAKHONRATCHASIMA_RDC</b></div>
                                 <div><b>ปลายทาง : ธนสินซูเปอร์สโตร์</b></div>
