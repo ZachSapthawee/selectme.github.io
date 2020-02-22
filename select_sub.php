@@ -57,10 +57,10 @@ function GetNameAgent($idAgent)
                     <label for="vehicle2"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</label><br>
                     <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
                     <label for="vehicle3"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</label><br><br>
-                    <input type="submit" value="Submit">
+                    <div><a href="select_sub.php" class="btn btn-primary btn-sm"> ตกลง</a></div>
                 </form>
             </div>
-            <div id="map" style="height: 500px; width: 700px; position: relative;overflow: hidden;margin: auto;"></div>
+            <div id="map" style="height: 500px; width: 700px; position: relative;overflow: hidden;margin: 50px auto;"></div>
     </section>
     <script>
         var jsonObj = [{
