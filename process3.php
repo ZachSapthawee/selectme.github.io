@@ -68,7 +68,7 @@ function GetNameAgent($idAgent)
                  </table>
                  </div>
                     </form><br>
-                    <div><a href="qrcode.php" class="btn btn-primary"> ชำระเงิน</a></div>       
+                    <div><a href="qrcode.php" class="btn btn-primary"> ยืนยันและชำระเงิน</a></div>       
     </section>
     <script>
         var jsonObj = [{
