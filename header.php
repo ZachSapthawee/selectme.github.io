@@ -17,12 +17,14 @@
                     <li class="li-menu"><a data-name="home" href="main.php">หน้าหลัก</a></li>
                     <?php if($_SESSION['userLevel']=="agent"){ ?>
                     <li class="li-menu"><a data-name="service" href="selectme_member.php">บริการ SelectMe</a></li>
-                    <li class="li-menu"><a data-name="history" href="#">ประวัติการใช้งาน</a></li>
+                    <li class="li-menu"><a data-name="history" href="myrequest.php">ประวัติการใช้งาน</a></li>
+                    <li class="li-menu"><a data-name="history" href="special_reward.php">คะแนนสะสม</a></li>
+                    <li class="li-menu"><a data-name="history" href="promotion.php">โปรโมชั่น</a></li>
                     <li class="li-menu"><a data-name="contact" href="contact.php">ติดต่อเรา</a></li>
                     <?php }else{ ?>
-                        <li class="li-menu"><a data-name="home" href="openbook.php">เปิดการจองรถ</a></li>
+                    <li class="li-menu"><a data-name="home" href="openbook.php">เปิดการจองรถ</a></li>
                     <li class="li-menu"><a data-name="home" href="listopen.php">รายการทั้งหมด</a></li>
-                    <li class="li-menu"><a data-name="service" href="#">รายงานสรุป</a></li>
+                    <li class="li-menu"><a data-name="service" href="report.php">รายงานสรุป</a></li>
                  
                     <?php }?>
                     <li class="li-menu"><a data-name="logout" href="logout.php" style="color:red;">ออกจากระบบ</a></li>
@@ -57,7 +59,7 @@
         บริการ SelectMe </a>
 </div>
 <div class="li-front-menu">
-    <a data-name="home" class="member-menu" href="#">
+    <a data-name="home" class="member-menu" href="myrequest.php">
         ประวัติการใช้งาน </a>
 </div>
 
@@ -74,7 +76,7 @@
 </div>
 
 <div class="li-front-menu">
-    <a data-name="home" class="member-menu" href="#">
+    <a data-name="home" class="member-menu" href="report.php">
         รายงานสรุป </a>
 </div>
     

@@ -51,7 +51,12 @@
             <?php
             include("dblink.php");
             $aid =  $_SESSION['agentId'];
-            $sql = "SELECT * FROM sm JOIN shipment ON sm.shipmentNo = shipment.shipmentNo JOIN vehicle ON shipment.vehicle_id = vehicle.vehicle_id WHERE sm.agentID = '$aid'";
+            $sql = "SELECT * FROM sm 
+            JOIN shipment 
+            ON sm.shipmentNo = shipment.shipmentNo 
+            JOIN vehicle 
+            ON shipment.vehicle_id = vehicle.vehicle_id 
+            WHERE sm.agentID = '$aid' AND sm.sm_status ='open'";
             $query = mysqli_query($dbcon,$sql);
             if(!$query){
             }
