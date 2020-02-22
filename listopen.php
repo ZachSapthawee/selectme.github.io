@@ -1,5 +1,6 @@
 <?php
 session_start();
+include("dateformat.php");
 if ($_SESSION["userLevel"] == "") {
     alert("กรุณา Login ก่อน");
     backtoindex();
@@ -80,7 +81,10 @@ function GetNameAgent($idAgent)
             echo "6 ล้อ"; 
           }
       ?></td>
-      <td><?php echo $result['date'];?></td>
+      <td><?php
+      $dateData=$result['date'];
+      $newdate = thai_date_short_number(strtotime($dateData)); // 19 ธันวาคม 2556 เวลา 10:17:48 
+      echo $newdate; ?></td>
       <td><?php 
       if($result['sm_status']=="open"){
           echo "<b><a style=\"color:green\">เปิดให้จอง</a></b>";
