@@ -99,9 +99,9 @@
                 </div>
                     <div class="clear-float"></div>
                     <div style="margin-top:7px;">
-                        <form action="tracking.php" method="get">
+                        <form action="tracking2.php" method="get">
                             
-                            <input type="text" name="tracking_code" class="search-box" placeholder="กรอกหมายเลขติดตามการส่งสินค้า" autocomplete="off">
+                            <input type="text" name="sn" class="search-box" placeholder="กรอกหมายเลขติดตามการส่งสินค้า" autocomplete="off">
                             <button class="btn-search"><img alt="" src="//www.shippop.com/assets/images/frontpage/icon_search.png?v=1.03484"></button>
                         </form>
                     </div>
