@@ -46,9 +46,9 @@ function GetNameAgent($idAgent)
     <header>
     <?php include("header.php");?> 
     </header>
-    <section class="service-section">
+    <section class="section_promo">
         <div class="wrapper-1000">
-            <h2>โปรโมชั่น</h2>
+            <h2 style="margin: 20px">โปรโมชั่น</h2>
             <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
             <div class="button_promotion">
                 <img src="img/cover_promotion.jpg" alt="">
@@ -67,6 +67,15 @@ function GetNameAgent($idAgent)
                     </button>
                 </div>
                 
+                
+            </div>
+            <div class="button_promotion_sale">
+                    save ฿500.00
+            </div>
+            <div class="button_promotionVouchers">
+                    <div class="title"> <b>What's in Your Plan</b></div>
+                    <div class="service-caption">EXPRESS Vouchers</div>
+                    <div class="service-captionparkage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam animi officiis quod id ad, ullam dolorum possimus minus aliquid nobis facere rem vero saepe aut molestias est atque neque provident?</div>
             </div>
 
         </div>

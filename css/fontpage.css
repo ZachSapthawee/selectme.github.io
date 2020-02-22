@@ -11475,17 +11475,15 @@ ul:nth-child(10){
 
 }
 .button_promotion1,.button_promotion2,.button_promotion3{
-  background-color: #4CAF50;
+  background-color: #f8f8f8;
   border: none;
-  color: white;
+  color: #0b9dd2;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  /* margin: 4px -3px; */
   cursor: pointer;
   padding: 45px 68px;
-  border: 1px solid rgb(224, 224, 224);
 }
 .button_promotion1{
   float:left;
@@ -11499,6 +11497,33 @@ ul:nth-child(10){
   float:right;
   width: 33.33%;
 }
-.button_promotion1,.button_promotion2,.button_promotion3:hover{
+.button_promotion1:hover,.button_promotion2:hover,.button_promotion3:hover{
+  background-color: #1669b3;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  color: white;
+}
+.button_promotion_sale{
+  margin: 10px;
+  font-size: 56px;
+  color: #0b9dd2;
+  margin: 60px;
+}
+.button_promotionVouchers{
+  background-color: #1669b3;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 45px 68px;
+  margin: 0px 20px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.section_promo{
+    text-align: center;
+    padding: 160px 0;
+}
+.h2promo{
+  margin: 10px;
 }

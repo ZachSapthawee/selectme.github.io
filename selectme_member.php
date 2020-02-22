@@ -45,7 +45,7 @@
     <header>
     <?php include("header.php");?> 
     </header>
-    <section class="service-section">
+    <section class="section_promo">
         <div class="wrapper-1000">
             <h2>ใช้บริการ SelectMe</h2>
             <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
