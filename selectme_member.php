@@ -89,7 +89,7 @@
                     }else{
                         echo "img/truck/4WHEELS_Truck.png";
                     } ?>" alt="รถบรรทุก" height="45px" style="margin: 10px;">
-                                    <div><a href="123.php" class="btn btn-primary btn-sm"> ใช้งาน SelectMe</a></div>
+                                    <div><a href="select_sub.php" class="btn btn-primary btn-sm"> ใช้งาน SelectMe</a></div>
                             </div>
                     </div>
                 </div>
