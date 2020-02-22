@@ -50,9 +50,23 @@ function GetNameAgent($idAgent)
         <div class="wrapper-1000">
             <h2>โปรโมชั่น</h2>
             <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
-            <div class="#">
+            <div class="button_promotion">
                 <img src="img/cover_promotion.jpg" alt="">
-                <button class="button_promotion"></button>
+                <div>
+                    <button class="button_promotion1">
+                        โปรโมชั่น 1 <br>
+                        ฿600.00
+                    </button>
+                    <button class="button_promotion2">
+                        โปรโมชั่น 2 <br>
+                        ฿1,600.00
+                    </button>
+                    <button class="button_promotion3">
+                        โปรโมชั่น 3 <br>
+                        ฿1,800.00
+                    </button>
+                </div>
+                
             </div>
 
         </div>

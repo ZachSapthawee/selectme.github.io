@@ -11466,14 +11466,39 @@ ul:nth-child(10){
 
 
 @media screen and (max-width: 1440px){
-  .service-card_select {
-    display: flex;
-    font-size: 1em;
-    padding: 10px;
-    margin: 14px;
-    border: 2px solid rgb(240, 240, 240);
-  }
-  .service-box{
 
-  }
+}
+
+
+.button_promotion{
+  margin: 0 auto;
+
+}
+.button_promotion1,.button_promotion2,.button_promotion3{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 4px -3px; */
+  cursor: pointer;
+  padding: 45px 68px;
+  border: 1px solid rgb(224, 224, 224);
+}
+.button_promotion1{
+  float:left;
+  width: 33.33%;
+}
+.button_promotion2{
+  float:none;
+  width: 33.33%;
+}
+.button_promotion3{
+  float:right;
+  width: 33.33%;
+}
+.button_promotion1,.button_promotion2,.button_promotion3:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
