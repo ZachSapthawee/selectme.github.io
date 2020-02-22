@@ -21,6 +21,7 @@
     <title>Document</title>
 </head>
 <body><br>
+    <a href="remote-book.php" class="btn btn-warning btn-lg">จำลองการจอง </a> 
     <a href="remote-pay.php" class="btn btn-success btn-lg"> จำลองการชำระเงิน </a>
 </body>
 </html>
