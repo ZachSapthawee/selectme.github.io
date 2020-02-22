@@ -126,7 +126,10 @@ function GetNameAgent($idAgent)
         <div class="wrapper-1000">
             <h2>โปรโมชั่น</h2>
             <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
-
+            <div class="#">
+                <img src="img/cover_promotion.jpg" alt="">
+                <button class="button_promotion"></button>
+            </div>
 
         </div>
     </section>
