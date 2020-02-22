@@ -59,9 +59,9 @@
                                     <div><b>ปลายทาง : ธนสินซูเปอร์สโตร์</b></div>
                                     <div><b>ประเภทรถ : 4 ล้อ</b></div>
                             </div>
-                            <div class="col_Right">
+                            <div class="col_Right" >
                                     <img src="img/truck/4WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
-                                    <div><button type="button" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div>
+                                    <div action="select_sub.php"><button type="" class="btn_select"><i class="fa fa-key"></i> เลือกรถ </button></div>
                             </div>
                     </div>
                 </div>
