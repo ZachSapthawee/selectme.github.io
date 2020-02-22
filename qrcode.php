@@ -53,7 +53,7 @@ function GetNameAgent($idAgent){
             <div id="clockdiv"></div>
     
             <img src="img/qrcode.png" alt="">
-            <div><b>จำนวนเงินที่ต้องชำระ 200.00 บาทถ้วน</b></div>
+            <div><b>จำนวนเงินที่ต้องชำระ 700.92 บาทถ้วน</b></div>
             <div><b>Thai Beverage Logistics Co., Ltd.</b></div>
            </div>
             
