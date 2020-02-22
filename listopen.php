@@ -49,16 +49,17 @@ function GetNameAgent($idAgent)
     </header>
     <section class="service-section">
     
-    <div class="container"style="margin:0 auto;" width="70%">
-    <h2>ใช้บริการ SelectMe</h2>
-             <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> 
+    <div class="container"style="width:auto;margin:0 auto;" width="70%">
+    <h2>รายการทั้งหมด</h2>
+             <h3>รายละเอียดรถที่เปิดจอง และติดตามสถานะ</h3> 
   <table width="80%" class="table table-borderless table-striped">
   <thead>
     <tr>
       <th width="20%" scope="col">Shipment No</th>
       <th width="15%" scope="col">ทะเบียนรถ</th>
-      <th width="10%" scope="col">วันที่จัดส่ง</th>
-      <th width="35%" scope="col">สถานะบริการ</th>
+      <th width="15%" scope="col">ประเภทรถ</th>
+      <th width="20%" scope="col">วันที่จัดส่ง</th>
+      <th width="25%" scope="col">สถานะบริการ</th>
       <th width="20%" scope="col">ยกเลิก</th>
     </tr>
   </thead>
@@ -73,6 +74,12 @@ function GetNameAgent($idAgent)
     <tr>
       <td><b><a style="color:#0b9dd2"><?php echo $result['shipmentNo'];?></a></b></td>
       <td><?php echo $result['vehicle_regnum'];?></td>
+      <td><?php if($result['vehicle_type']=="4w"){ 
+            echo "4 ล้อ";
+        }else{
+            echo "6 ล้อ"; 
+          }
+      ?></td>
       <td><?php echo $result['date'];?></td>
       <td><?php 
       if($result['sm_status']=="open"){
@@ -80,7 +87,15 @@ function GetNameAgent($idAgent)
       }elseif ($result['sm_status']=="cancle") {
           echo "<b><a style=\"color:red\">ยกเลิกให้บริการ</a></b>";
       }
-      
+      elseif ($result['sm_status']=="book") {
+        echo "<b><a style=\"color:#1669b3\">ลูกค้าจองแล้ว(ยังไม่ชำระเงิน)</a></b>";
+        }
+    elseif ($result['sm_status']=="bookp") {
+        echo "<b><a style=\"color:#1669b3\">ลูกค้าจองแล้ว(ชำระเงินแล้ว)</a></b>";
+        }elseif ($result['sm_status']=="success") {
+            echo "<b><a style=\"color:#b2b2b2\">บริการเสร็จสิ้น</a></b>";
+            }
+    
       ?></td>
       <td><?php 
       if($result['sm_status']=="open"){
