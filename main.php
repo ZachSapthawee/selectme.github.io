@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 <div class="service-item" >
-                    <div class="service-card"><a href="special_discount.php" class="bug-service-card"></a> <img src="img/icon/icon_service_07.png" alt="รายงาน" height="65px">
+                    <div class="service-card"><a href="special_reward.php" class="bug-service-card"></a> <img src="img/icon/icon_service_07.png" alt="รายงาน" height="65px">
                         <div class="title">คะแนน</div>
                         <div class="service-caption">สะสมไมล์เพื่อแลกส่วนลดพิเศษ</div>
                     </div>

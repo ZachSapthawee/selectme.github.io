@@ -8823,10 +8823,15 @@ footer .footer-copyright .footer-social i {
 
 
 .service-card_select{
+  background: #f8f8f8;
   display: flex;
   font-size: 1em;
   padding: 10px;
   margin: 14px;
+  /* border: 2px solid rgb(240, 240, 240); */
+}
+.service-card_select:hover{
+  background: #eeeeee;
   border: 2px solid rgb(240, 240, 240);
 }
 .col_left{
@@ -11526,4 +11531,44 @@ ul:nth-child(10){
 }
 .h2promo{
   margin: 10px;
+}
+.reward_page{
+  background-color: #f8f8f8;
+  border: none;
+  color: #0b9dd2;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 30px 300px;
+  margin: 20px;
+}
+.reward_page b{
+  font-size: 100px;
+}
+.reward_page p{
+  font-size: 40px;
+}
+.button_reward1 ,.button_reward2{
+  background-color: #f8f8f8;
+  border: none;
+  color: #0b9dd2;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 45px 68px;
+}
+.button_reward1:hover ,.button_reward2:hover{
+  background-color: #1669b3;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  color: white;
+}
+.button_reward1 ,.button_reward2{
+  font-size: 20px;
+}
+.button_reward2{
+  /* float: right; */
 }

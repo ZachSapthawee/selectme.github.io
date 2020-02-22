@@ -50,6 +50,26 @@ function GetNameAgent($idAgent)
         <div class="wrapper-1000">
             <h2>สะสมคะแนน</h2>
             <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
+            <div class="button_promotion">
+                <img src="img/cover_promotion.jpg" alt="">
+                <div>
+                    <div class="reward_page">
+                        <p>คะแนนสะสมทั้งหมด</p>  <br>
+                        <b>300</b> <br>
+                        <p>คะแนน</p>
+                        
+                    </div>
+                    <button class="button_reward1">
+                        <p> ดูประวัติคะแนน </p>
+                    </button>
+                    <button class="button_reward2">
+                        <p>วิธีสะสมคะแนน</p>
+                    </button>
+                    
+                </div>
+                
+                
+            </div>
         </div>
     </section>
 </body>
