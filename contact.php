@@ -69,19 +69,21 @@ function GetNameAgent($idAgent)
 
     <script>
         var jsonObj = [{
-                "location": "Ontrade 2",
-                "lat": "13.801184",
-                "lng": "100.559985"
+                "location": "บริษัท ไทยเบฟเวอเรจ โลจิสติก จำกัด "+
+                            "เลขที่ 1 อาคารอีสท์ วอเตอร์ ซอยวิภาวดีรังสิต 5."+
+                            "ถนนวิภาวดีรังสิต แขวงจอมพล เขตจตุจักร กรุงเทพมหานคร 10900.",
+                "lat": "13.7994089",
+                "lng": "100.5597674"
             }
         ]
 
         function initMap() {
             var mapOptions = {
                 center: {
-                    lat: 13.801184,
-                    lng: 100.559985
+                    lat: 13.7994089,
+                    lng: 100.5597674
                 },
-                zoom: 18,
+                zoom: 19,
             }
 
             var maps = new google.maps.Map(document.getElementById("map"), mapOptions);
