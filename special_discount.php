@@ -50,11 +50,7 @@ function GetNameAgent($idAgent)
         <div class="wrapper-1000">
             <h2>สะสมคะแนน</h2>
             <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
-
-
         </div>
     </section>
-
 </body>
-
 </html>

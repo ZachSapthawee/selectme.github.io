@@ -51,12 +51,13 @@ function GetNameAgent($idAgent)
     
     <div class="container"style="width:auto;margin:0 auto;" width="70%">
     <h2>รายการทั้งหมด</h2>
-             <h3>รายละเอียดรถที่เปิดจแง และติดตามสถานะ</h3> 
+             <h3>รายละเอียดรถที่เปิดจอง และติดตามสถานะ</h3> 
   <table width="80%" class="table table-borderless table-striped">
   <thead>
     <tr>
       <th width="20%" scope="col">Shipment No</th>
       <th width="15%" scope="col">ทะเบียนรถ</th>
+      <th width="15%" scope="col">ประเภทรถ</th>
       <th width="20%" scope="col">วันที่จัดส่ง</th>
       <th width="25%" scope="col">สถานะบริการ</th>
       <th width="20%" scope="col">ยกเลิก</th>
@@ -73,6 +74,12 @@ function GetNameAgent($idAgent)
     <tr>
       <td><b><a style="color:#0b9dd2"><?php echo $result['shipmentNo'];?></a></b></td>
       <td><?php echo $result['vehicle_regnum'];?></td>
+      <td><?php if($result['vehicle_type']=="4w"){ 
+            echo "4 ล้อ";
+        }else{
+            echo "6 ล้อ"; 
+          }
+      ?></td>
       <td><?php echo $result['date'];?></td>
       <td><?php 
       if($result['sm_status']=="open"){
@@ -88,7 +95,7 @@ function GetNameAgent($idAgent)
         }elseif ($result['sm_status']=="success") {
             echo "<b><a style=\"color:#b2b2b2\">บริการเสร็จสิ้น</a></b>";
             }
-      
+    
       ?></td>
       <td><?php 
       if($result['sm_status']=="open"){
