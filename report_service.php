@@ -52,14 +52,14 @@ function GetNameAgent($idAgent)
         <div class="wrapper-1000">
             <h2>รายงานสรุปการใช้บริการ</h2>
             <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
-            <canvas id="myChart" width="200" height="200" style="height: 500px;width: 700px;" ></canvas>
+            <canvas id="myChart" width="200" height="200" style="height: 200px;width: 200px;" ></canvas>
 
         </div>
     </section>
 
 <script>
 var ctx = document.getElementById('myChart').getContext('2d');
-    // ctx.fillRect(0, 0, 90, 100);
+    ctx.fillRect(0, 0, 100, 100);
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {

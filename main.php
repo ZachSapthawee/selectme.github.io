@@ -83,24 +83,24 @@
                     </div>
                 </div>
                 <?php }else{ ?>
+                        <div class="service-item" >
+                        <div class="service-card"><a href="openbook.php" class="bug-service-card"></a> <img src="img/icon/icon_service_08.png" alt="รายงาน" height="65px">
+                            <div class="title">เปิดการจอง</div>
+                            <div class="service-caption">เลือกรถที่จะเปิดให้บริการ</div>
+                        </div>
+                    </div>
                     <div class="service-item" >
-                    <div class="service-card"><a href="openbook.php" class="bug-service-card"></a> <img src="img/icon/icon_service_08.png" alt="รายงาน" height="65px">
-                        <div class="title">เปิดการจอง</div>
-                        <div class="service-caption">เลือกรถที่จะเปิดให้บริการ</div>
+                        <div class="service-card"><a href="listopen.php" class="bug-service-card"></a> <img src="img/icon/icon_service_09.png" alt="รายงาน" height="65px">
+                            <div class="title">รายการทั้งหมด</div>
+                            <div class="service-caption">ดูรายละเอียดรถที่เปิดจอง และติดตามสถานะ</div>
+                        </div>
                     </div>
-                </div>
-                <div class="service-item" >
-                    <div class="service-card"><a href="listopen.php" class="bug-service-card"></a> <img src="img/icon/icon_service_09.png" alt="รายงาน" height="65px">
-                        <div class="title">รายการทั้งหมด</div>
-                        <div class="service-caption">ดูรายละเอียดรถที่เปิดจอง และติดตามสถานะ</div>
+                    <div class="service-item" >
+                        <div class="service-card"><a href="report.php" class="bug-service-card"></a> <img src="img/icon/icon_service_10.png" alt="รายงาน" height="65px">
+                            <div class="title">รายงานสรุป</div>
+                            <div class="service-caption">สรุปการใช้งานระบบ </div>
+                        </div>
                     </div>
-                </div>
-                <div class="service-item" >
-                    <div class="service-card"><a href="#" class="bug-service-card"></a> <img src="img/icon/icon_service_10.png" alt="รายงาน" height="65px">
-                        <div class="title">รายงานสรุป</div>
-                        <div class="service-caption">สรุปการใช้งานระบบ </div>
-                    </div>
-                </div>
 
                 <?php }?>
 
