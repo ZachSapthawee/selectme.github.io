@@ -86,7 +86,7 @@ function GetNameAgent($idAgent)
                         </div>
                         <div class="service-item">
                             <div class="service-card"><a href="report_status_sale.php" class="bug-service-card"></a> <img src="img/icon/icon_service_02.png" alt="ประวัติการใช้บริการ" height="66px">
-                                <div class="title">รายงานสถานะการสั่งซื้อ</div>
+                                <div class="title">รายงานสถานะการจัดส่ง</div>
                                 <!-- <div class="service-caption">สรุปประวัติการใช้บริการ</div> -->
                             </div>
                         </div>

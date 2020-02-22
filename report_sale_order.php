@@ -30,7 +30,9 @@ function GetNameAgent($idAgent)
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
+
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/active.js"></script>
     <meta charset="UTF-8">
@@ -43,18 +45,53 @@ function GetNameAgent($idAgent)
 </head>
 
 <body>
-    <header>
+<header>
     <?php include("header.php");?> 
-    </header>
+</header>
     <section class="service-section">
         <div class="wrapper-1000">
             <h2>การสั่งซื้อสินค้า</h2>
             <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
-
+            <canvas id="myChart" height="500vw" width="1000vw" ></canvas>
 
         </div>
     </section>
 
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ['ยังไม่ถึงกำหนดส่ง', 'กำหนดส่งวันนี้', 'เลยกำหนดส่ง'],
+        datasets: [{
+            label: 'รายงานคำสั่งซื้อสินค้า',
+            data: [30,50,20],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
 </body>
 
 </html>
