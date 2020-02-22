@@ -13,9 +13,15 @@ function backtoindex()
 {
     echo "<script>  window.location.href='index.php'; </script>";
 }
+function GetNameAgent($idAgent){
+    include("dblink.php");
+    $sql = "SELECT agent.agent_name FROM agent JOIN login on agent.login_id = login.login_id where agent_id = '$idAgent'";
+    $query = mysqli_query($dbcon,$sql);
+    $result = mysqli_fetch_array($query,MYSQLI_ASSOC);
+    return $result['agent_name'];
 
-
-
+    
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,12 +46,46 @@ function backtoindex()
     <?php include("header.php");?> 
     </header>
     <section class="service-section">
-        <div class="wrapper-1000">
-            <h2>ใช้บริการ SelectMe</h2>
+        <div class="wrapper-1000"><br>
+            <!-- <h2>QRCode</h2>
+            <h3>สแกนเพื่อชำระเงิน</h3> -->     
+            <img src="img/promptpay_logo.png" width="150px" alt=""><br>                   
+            <div id="clockdiv"></div>
     
-        </div>
-    </section>
+            <img src="img/qrcode.png" alt="">
+            <div><b>จำนวนเงินที่ต้องชำระ 200.00 บาทถ้วน</b></div>
+            <div><b>Thai Beverage Logistics Co., Ltd.</b></div>
+           </div>
+            
 
+
+    </section>
+    <script type="text/JavaScript">  
+var time_in_minutes = 10;
+var current_time = Date.parse(new Date());
+var deadline = new Date(current_time + time_in_minutes*60*1000);
+
+
+function time_remaining(endtime){
+	var t = Date.parse(endtime) - Date.parse(new Date());
+	var seconds = Math.floor( (t/1000) % 60 );
+	var minutes = Math.floor( (t/1000/60) % 60 );
+	var hours = Math.floor( (t/(1000*60*60)) % 24 );
+	var days = Math.floor( t/(1000*60*60*24) );
+	return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
+}
+function run_clock(id,endtime){
+	var clock = document.getElementById(id);
+	function update_clock(){
+		var t = time_remaining(endtime);
+		clock.innerHTML = '<br><h4>กรุณาชำระเงินภายใน  <b>'+t.minutes+':'+t.seconds+' นาที</b></h4>';
+		if(t.total<=0){ clearInterval(timeinterval); }
+	}
+	update_clock(); // run function once at first to avoid delay
+	var timeinterval = setInterval(update_clock,1000);
+}
+run_clock('clockdiv',deadline);
+    </script> 
 </body>
 
 </html>

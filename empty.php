@@ -13,7 +13,13 @@ function backtoindex()
 {
     echo "<script>  window.location.href='index.php'; </script>";
 }
-
+function GetNameAgent($idAgent){
+    include("dblink.php");
+    $sql = "SELECT agent.agent_name FROM agent JOIN login on agent.login_id = login.login_id where agent_id = '$idAgent'";
+    $query = mysqli_query($dbcon,$sql);
+    $result = mysqli_fetch_array($query,MYSQLI_ASSOC);
+    return $result['agent_name'];
+}
 
 
 ?>
@@ -41,7 +47,7 @@ function backtoindex()
     </header>
     <section class="service-section">
         <div class="wrapper-1000">
-            <h2>ใช้บริการ SelectMe</h2>
+            <h2>หน้าว่าง</h2>
     
         </div>
     </section>

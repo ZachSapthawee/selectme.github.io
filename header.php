@@ -1,19 +1,18 @@
 <div class="top_menu_mobile_toggle">
-            <div class="header-mobile">
-                <div class="padding-mobile">
-                    <div class="left-menu">
-                        <a class="logo-mobile" href="main.php" title="SELECTME"><img alt="SELECTME" height="32" src="img/Logo_SM.png"></a>
-                    </div>
-                    <div class="right-menu">
-                        <a data-name="shortcut-tracking"    class="a-mobile" href="tracking.php"><i class="fa fa-truck fa-2x "></i></a>
-                        <a data-name="shortcut-openmenu"    class="a-mobile show-menu-mobile" href="#"><i class="fa fa-bars fa-2x"></i></a>
-                    </div>
-                    <div class="clear-float"></div>
-                </div>
+    <div class="header-mobile">
+        <div class="padding-mobile">
+            <div class="left-menu">
+                <a class="logo-mobile" href="main.php" title="SELECTME"><img alt="SELECTME" height="32" src="img/Logo_SM.png"></a>
+            </div>
+            <div class="right-menu">
+                <a data-name="shortcut-tracking"    class="a-mobile" href="tracking.php"><i class="fa fa-truck fa-2x "></i></a>
+                <a data-name="shortcut-openmenu"    class="a-mobile show-menu-mobile" href="#"><i class="fa fa-bars fa-2x"></i></a>
+            </div>
+             <div class="clear-float"></div>
+            </div>
             </div>
                 <div class="toolbar ">
                 <ul class="main-menu">
-                    
                     <li class="li-header">ชื่อผู้ใช้ : <?php  if($_SESSION['userLevel']=="agent"){echo GetNameAgent($_SESSION['agentId']); } else{echo "ศูนย์กระจายสินค้า นครราชสีมา"; }?> <br></li>
                     <li class="li-menu"><a data-name="home" href="main.php">หน้าหลัก</a></li>
                     <?php if($_SESSION['userLevel']=="agent"){ ?>
