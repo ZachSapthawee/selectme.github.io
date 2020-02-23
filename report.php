@@ -98,7 +98,7 @@ function GetNameAgent($idAgent)
                         </div>
 
                         <div class="service-item" >   
-                            <div class="service-card"><a href="#" class="bug-service-card"></a> <img src="img/icon/icon_service_11.png" alt="รายงาน" height="65px">
+                            <div class="service-card"><a href="tablecar_Report.php" class="bug-service-card"></a> <img src="img/icon/icon_service_11.png" alt="รายงาน" height="65px">
                                 <div class="title">รายงานการใช้รถ SelectMe</div>
                                 <!-- <div class="service-caption"></div> -->
                             </div>

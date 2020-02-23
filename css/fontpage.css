@@ -11525,14 +11525,14 @@ ul:nth-child(10) {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  padding: 30px 300px;
+  /* padding: 30px 300px; */
   margin: 20px;
 }
 .reward_page b {
-  font-size: 100px;
+  font-size: 50px;
 }
 .reward_page p {
-  font-size: 40px;
+  font-size: 30px;
 }
 .button_reward1,
 .button_reward2 {
