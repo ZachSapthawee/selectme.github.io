@@ -24,6 +24,7 @@ function GetNameAgent($idAgent)
 }
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,37 +50,56 @@ function GetNameAgent($idAgent)
     <section class="section_promo">
         <div class="wrapper-1000">
             <h2 style="margin: 20px">โปรโมชั่น</h2>
-            <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
-            <div class="button_promotion">
-                <img src="img/cover_promotion.jpg" alt="">
-                <div class="item_promo">
-                    <div class="button_promotion1">
-                        SelectMe ขนขน <br> 
-                        ฿600.00 <br>
-                        /เดือน
-                    </div>
-                    <div class="button_promotion2">
-                        SelectMe เหมา เหมา <br>
-                        ฿1,600.00
-                        /เดือน
-                    </div>
-                    <div class="button_promotion3">
-                        SelectMe คุ้ม คุ้ม <br>
-                        ฿1,800.00
-                        /เดือน
-                    </div>
+            <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น10 Vouchers 15  20  save ฿  2 = 750   1200</h3> -->
+            <div class="section_promo">
+        <div class="button_promotion">
+            <img src="img/cover_promotion.jpg" alt="">
+            <div class="item_promo">
+                <div class="button_promotion1">
+                    SelectMe ขน ขน <br>
+                    ฿1,600.00 <br>
+                    /เดือน
                 </div>
-                
-                
-                
+                <div class="button_promotion2">
+                    SelectMe เหมา เหมา <br>
+                    ฿2,250.00 <br>
+                    /เดือน
+                </div>
+                <div class="button_promotion3">
+                    SelectMe คุ้ม คุ้ม <br>
+                    ฿2,800.00 <br>
+                    /เดือน
+                </div>
             </div>
+
+
+
+        </div>
+        <div class="button_promotion_sale">
+            <b>save ฿400.00</b>
+        </div>
+        <div class="button_promotionVouchers">
+            <div class="title"> <b style="font-size: 20px">แผนของคุณ</b></div>
+            <div class="service-caption">10 Vouchers</div>
+            <div class="service-captionparkage">SelectMe - ขน ขน ส่วนลด 500 บาท</div>
+        </div>
+    </div>
+            <!-- <iframe  width="100%" height="400px" src="promotion_konkon.php" scrolling="no"></iframe>  -->
             <!-- <div class="button_promotion_sale">
-                    <b>save ฿500.00</b> 
+                    <b>save ฿750.00</b> 
             </div>
             <div class="button_promotionVouchers">
-                    <div class="title"> <b>What's in Your Plan</b></div>
-                    <div class="service-caption">10 Vouchers</div>
-                    <div class="service-captionparkage">10 Vouchers</div>
+                    <div class="title"> <b style="font-size: 20px">แผนของคุณ</b></div>
+                    <div class="service-caption">15 Vouchers</div>
+                    <div class="service-captionparkage">SelectMe - เหมา เหมา  ส่วนลด 750 บาท</div>
+            </div>
+            <div class="button_promotion_sale">
+                    <b>save ฿1,200.00</b> 
+            </div>
+            <div class="button_promotionVouchers">
+                    <div class="title"> <b style="font-size: 20px">แผนของคุณ</b></div>
+                    <div class="service-caption">20 Vouchers</div>
+                    <div class="service-captionparkage">SelectMe - คุ้ม คุ้ม  ส่วนลด 1,200 บาท</div>
             </div> -->
 
         </div>

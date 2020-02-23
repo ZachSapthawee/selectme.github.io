@@ -60,10 +60,10 @@ function GetNameAgent($idAgent)
                         
                     </div>
                     <button class="button_reward1">
-                        <p> ดูประวัติคะแนน </p>
+                        <p><b>ดูประวัติคะแนน</b></p>
                     </button>
                     <button class="button_reward2">
-                        <p>วิธีสะสมคะแนน</p>
+                        <p> <b>วิธีสะสมคะแนน</b></p>
                     </button>
                     
                 </div>

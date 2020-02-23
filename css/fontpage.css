@@ -11517,7 +11517,7 @@ ul:nth-child(10) {
   margin: 10px;
 }
 .reward_page {
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
   border: none;
   color: #0b9dd2;
   text-align: center;
@@ -11532,7 +11532,7 @@ ul:nth-child(10) {
   font-size: 50px;
 }
 .reward_page p {
-  font-size: 30px;
+  font-size: 27px;
 }
 .button_reward1,
 .button_reward2 {
@@ -11544,7 +11544,9 @@ ul:nth-child(10) {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  padding: 45px 68px;
+  padding: 22px 46px;
+  margin: auto;
+  
 }
 .button_reward1:hover,
 .button_reward2:hover {
@@ -11561,21 +11563,32 @@ ul:nth-child(10) {
   /* float: right; */
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (min-width: 300px) {
   .section_promo {
     text-align: center;
     padding: 0 auto;
   }
   .button_promotion {
     margin: 0 auto;
-    /* display: flexbox; */
     justify-content: center;
 
   }
   .item_promo{
-    justify-self: center;
-    float: left;
-    
+    margin: 0 auto;
+    display: flex;
+    margin: 10px;
+  }
+  .button_promotion1{
+    margin: 0 5px;
+    border: 1px solid #1669b3;
+    padding: 8px;
+    background: #1669b3;
+    color: white;
+  }
+  .button_promotion2, .button_promotion3{
+    margin: 0 5px;
+    border: 1px solid #1669b3;
+    padding: 8px;
   }
   .item_promo .button_promotion1 .button_promotion2 .button_promotion3{
     background: #f8f8f8;
@@ -11585,25 +11598,9 @@ ul:nth-child(10) {
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    height: 90px;
-    width: 90px;
-    float: left;
+    padding: 20px;
     margin: 0px auto;
     border-radius: 5px;
-  }
-  .button_promotion1::before{
-    /* content: ''; */
-    /* background-color: #0067b9; */
-    /* float: left;
-    width: 20%; */
-  }
-  .button_promotion2 {
-    /* float: none;
-    width: 20%; */
-  }
-  .button_promotion3 {
-    /* float: right;
-    width: 20%; */
   }
   .button_promotion1:hover,
   .button_promotion2:hover,
