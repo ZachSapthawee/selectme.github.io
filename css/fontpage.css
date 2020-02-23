@@ -11657,7 +11657,7 @@ ul:nth-child(10) {
   }
   .service-itemselect {
     display: block;
-    width: 590px;
+    /* width: 590px; */
     padding: 10px;
     font-size: 14px;
     border-radius: 10px;
