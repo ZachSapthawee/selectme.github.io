@@ -73,7 +73,7 @@ function GetNameAgent($idAgent)
                                 <div><b>วันและเวลาที่คาดว่าจะถึง : </b><?php
                                                                         $dateData = $result['date'];
                                                                         $newdate = thai_date_short_number(strtotime($dateData));
-                                                                        echo $newdate; ?></div>
+                                                                        echo $newdate; echo $dateData;?></div>
                                 <div><b>ต้นทาง : </b><?php echo $result['shipFrom']; ?></div>
                                 <div><b>ประเภทรถ : </b> <?php if ($result['vehicle_type'] == "4w") {
                                                             echo "4 ล้อ";

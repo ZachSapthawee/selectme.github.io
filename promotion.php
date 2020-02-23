@@ -52,31 +52,35 @@ function GetNameAgent($idAgent)
             <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
             <div class="button_promotion">
                 <img src="img/cover_promotion.jpg" alt="">
-                <div>
+                <div class="item_promo">
                     <div class="button_promotion1">
                         SelectMe ขนขน <br> 
-                        ฿600.00
+                        ฿600.00 <br>
+                        /เดือน
                     </div>
                     <div class="button_promotion2">
                         SelectMe เหมา เหมา <br>
                         ฿1,600.00
+                        /เดือน
                     </div>
                     <div class="button_promotion3">
                         SelectMe คุ้ม คุ้ม <br>
                         ฿1,800.00
+                        /เดือน
                     </div>
                 </div>
                 
                 
+                
             </div>
-            <div class="button_promotion_sale">
-                    save ฿500.00
+            <!-- <div class="button_promotion_sale">
+                    <b>save ฿500.00</b> 
             </div>
             <div class="button_promotionVouchers">
                     <div class="title"> <b>What's in Your Plan</b></div>
-                    <div class="service-caption">EXPRESS Vouchers</div>
-                    <div class="service-captionparkage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam animi officiis quod id ad, ullam dolorum possimus minus aliquid nobis facere rem vero saepe aut molestias est atque neque provident?</div>
-            </div>
+                    <div class="service-caption">10 Vouchers</div>
+                    <div class="service-captionparkage">10 Vouchers</div>
+            </div> -->
 
         </div>
     </section>

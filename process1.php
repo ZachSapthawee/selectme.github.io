@@ -70,9 +70,16 @@
                                     <div><b>Shipment No : <?php echo $result['shipmentNo']; ?></b></div>
                                     <div><b>วันที่ส่ง : <?php
                                         $dateData=$result['date'];
-                                        $newdate = thai_date_short_number(strtotime($dateData));
-                                        echo $newdate; ?></b></div>
-                                    
+                                        $newdate = date("jS F, Y", strtotime($dateData));
+                                        // $newdate = thai_date_short_number(strtotime($dateData));
+                                        //echo $newdate; 
+                                        echo $newdate;?></b></div>
+                                    <div><b>เวลาที่คาดว่าจะถึง : <?php
+                                            $dateData=$result['date'];
+                                            $newdate = date("h:i:s", strtotime($dateData));
+                                            // $newdate = thai_date_short_number(strtotime($dateData));
+                                            //echo $newdate; 
+                                            echo $newdate;?></b></div>
                                     <div><b>ประเภทรถ : <?php if($result['vehicle_type']=="4w"){ 
                                         echo "4 ล้อ";
                                     }else{

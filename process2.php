@@ -46,38 +46,38 @@ function GetNameAgent($idAgent)
 
 
     <section class="service-section">
-     
-            <br><br>
-            <h2>เลือก SubAgent</h2>
-            <form action="">
-     
+
+        <br><br>
+        <h2>เลือก SubAgent</h2>
+        <form action="">
+
             <table width="90%">
-            <tr>
-            <td>
-            <?php 
-                include("dblink.php");
-                $aid =  $_SESSION['agentId'];
-                $sql = "SELECT * FROM `sub-agent` 
+                <tr>
+                    <td>
+                        <?php
+                        include("dblink.php");
+                        $aid =  $_SESSION['agentId'];
+                        $sql = "SELECT * FROM `sub-agent` 
                 WHERE agent_id = '$aid'";
-                $query = mysqli_query($dbcon,$sql);
-                if(!$query){
-                }
-                while($result = mysqli_fetch_assoc($query))
-                 {                
-             ?>     
-             
-             <div style="text-align: left;">
-                    <input type="checkbox" id="" name="" value="<?php $result['subagent_id']; ?>">
-                    <label > <?php echo $result['subagent_name']; ?></label><br>
+                        $query = mysqli_query($dbcon, $sql);
+                        if (!$query) {
+                        }
+                        while ($result = mysqli_fetch_assoc($query)) {
+                        ?>
+
+                            <div style="text-align: left;">
+                                <input type="checkbox" id="" name="" value="<?php $result['subagent_id']; ?>">
+                                <label> <?php echo $result['subagent_name']; ?></label><br>
+                            </div>
+
+                        <?php } ?>
+                    </td>
+                </tr>
+            </table>
             </div>
-            
-                 <?php } ?>
-                 </td> </tr>
-                 </table>
-                 </div>
-                    </form><br>
-                    <div><a href="process3.php" class="btn btn-primary"> คำนวณราคา</a></div>
-            
+        </form><br>
+        <div><a href="process3.php" class="btn btn-primary"> คำนวณราคา</a></div>
+
     </section>
     <script>
         var jsonObj = [{

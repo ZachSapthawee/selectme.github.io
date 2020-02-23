@@ -51,11 +51,9 @@ function GetNameAgent($idAgent)
     <section>
         <h2>ติดตามการจัดส่งสินค้า</h2>
         <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3>
-    
-            
-             <iframe  width="80%" height="400px" src="tracking1.php" scrolling="no"></iframe> 
-                    
-                             
+
+            <iframe  width="100%" height="400px" src="tracking1.php" scrolling="no"></iframe> 
+
     </section>
 
     <script>
