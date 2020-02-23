@@ -25,9 +25,9 @@
         <div class="row">
             <div class="col col-sm-2 col-md-10 col-lg-10">
                 <ul class="timeline">
-                    <li class="active"><div class=>RDC</div></li>
+                    <li class="active"><div class=>รับสินค้า</div></li>
                     <li class="active">กำลังเดินทาง</li>
-                    <li>ธนสินซูเปอร์สโตร์</li>
+                    <li>ส่งสินค้าสำเร็จ</li>
                 </ul>
             </div>
             <div class="service-box">
