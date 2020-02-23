@@ -45,10 +45,10 @@ function GetNameAgent($idAgent)
     </header>
     <section>
 
-        <h2>RDC โคาราช</h2>
+        <h2>RDC โคราช</h2>
         <div class="table_Report">
             <table>
-                <tr>
+                <tr style="background: #e8e8e8">
                     <th>Day</th>
                     <th>จันทร์</th>
                     <th>อังคาร</th>
@@ -58,104 +58,93 @@ function GetNameAgent($idAgent)
                     <th>ต้นทุน(THB)</th>
                 </tr>
                 <tr>
-                    <td>สร812310</td>
+                    <td><b>สร81-2310</b></td>
+                    <td>
+                        <img src="img/icon/icon_service_01_1_2.png" width="60px" height="55px" alt="logo_selectme">
+                        <!-- <a>ขนสินค้าปกติ<br></a>
+                        <a>Select Me</a> -->
+                    </td>
                     <td>
                         <a>ขนสินค้าปกติ<br></a>
-                        <a>Select Me</a>
+                    </td>
+                    <td>
+                        <img src="img/icon/icon_service_01_1_2.png" width="60px" height="55px" alt="logo_selectme">
                     </td>
                     <td>
                         <a>ขนสินค้าปกติ<br></a>
                     </td>
                     <td>
                         <a>ขนสินค้าปกติ<br></a>
-                        <a>Select Me</a>
                     </td>
                     <td>
-                        <a>ขนสินค้าปกติ<br></a>
-                    </td>
-                    <td>
-                        <a>ขนสินค้าปกติ<br></a>
-                    </td>
-                    <td>
-                        <a>- 2,000<br></a>
-                        <a>+ 1,200</a>
+                        <a style="color: red"><b>- 2,000</b> <br></a>
+                        <a style="color: green"><b>+ 1,200 </b> </a>
                     </td>
                 </tr>
                 <tr>
-                    <td>นม842356</td>
+                    <td><b>นม84-2356</b></td>
                     <td>
                         <a>ขนสินค้าปกติ<br></a>
                     </td>
                     <td>
-                        <a>ขนสินค้าปกติ<br></a>
-                        <a>Select Me</a>
+                        <img src="img/icon/icon_service_01_1_2.png" width="60px" height="55px" alt="logo_selectme">
+                    </td>
+                    <td>
+                        <img src="img/icon/icon_service_01_1_2.png" width="60px" height="55px" alt="logo_selectme">
                     </td>
                     <td>
                         <a>ขนสินค้าปกติ<br></a>
-                        <a>Select Me</a>
                     </td>
                     <td>
-                        <a>ขนสินค้าปกติ<br></a>
+                        <img src="img/icon/icon_service_01_1_2.png" width="60px" height="55px" alt="logo_selectme">
                     </td>
                     <td>
-                        <a>ขนสินค้าปกติ<br></a>
-                        <a>Select Me</a>
-                    </td>
-                    <td>
-                        <a>- 5,000<br></a>
-                        <a>+ 3,000</a>
+                        <a style="color: red"><b>- 5,000</b> <br></a>
+                        <a style="color: green"><b>+ 3,000</b> </a>
                     </td>
                 </tr>
                 <tr>
-                    <td>กท641898</td>
+                    <td><b>กท64-1898</b></td>
                     <td>
-                        <a>ขนสินค้าปกติ<br></a>
-                        <a>Select Me</a>
+                        <img src="img/icon/icon_service_01_1_2.png" width="60px" height="55px" alt="logo_selectme">
                     </td>
                     <td>
-                        <a>ขนสินค้าปกติ<br></a>
-                        <a>Select Me</a>
+                        <img src="img/icon/icon_service_01_1_2.png" width="60px" height="55px" alt="logo_selectme">
                     </td>
                     <td>
-                        <a>ขนสินค้าปกติ<br></a>
-                        <a>Select Me</a>
+                        <img src="img/icon/icon_service_01_1_2.png" width="60px" height="55px" alt="logo_selectme">
                     </td>
                     <td>
                         <a>ขนสินค้าปกติ<br></a>
                     </td>
                     <td>
-                        <a>ขนสินค้าปกติ<br></a>
-                        <a>Select Me</a>
+                        <img src="img/icon/icon_service_01_1_2.png" width="60px" height="55px" alt="logo_selectme">
                     </td>
                     <td>
-                        <a>- 10,000<br></a>
-                        <a>+ 8,000</a>
+                        <a style="color: red"><b>- 10,000</b> <br></a>
+                        <a style="color: green"><b>+ 8,000</b> </a>
                     </td>
                 </tr>
                 <tr>
-                    <td>กท641902</td>
+                    <td> <b>กท64-1902</b></td>
                     <td>
-                        <a>ขนสินค้าปกติ<br></a>
-                        <a>Select Me</a>
+                        <img src="img/icon/icon_service_01_1_2.png" width="60px" height="55px" alt="logo_selectme">
                     </td>
                     <td>
-                        <a>ขนสินค้าปกติ<br></a>
-                        <a>Select Me</a>
+                        <img src="img/icon/icon_service_01_1_2.png" width="60px" height="55px" alt="logo_selectme">
                     </td>
                     <td>
-                        <a>ขนสินค้าปกติ<br></a>
-                        <a>Select Me</a>
+                        <img src="img/icon/icon_service_01_1_2.png" width="60px" height="55px" alt="logo_selectme">
                     </td>
                     <td>
-                        <a>ขนสินค้าปกติ<br></a>
-                        <a>Select Me</a>
+                        <img src="img/icon/icon_service_01_1_2.png" width="60px" height="55px" alt="logo_selectme">
                     </td>
                     <td>
                         <a>ขนสินค้าปกติ<br></a>
                     </td>
                     <td>
-                        <a>- 10,000<br></a>
-                        <a>+ 7,000</a>
+                        <a style="color: red"><b>- 10,000</b> <br></a>
+                        <a style="color: green"><b>+ 7,000</b> </a>
                     </td>
                 </tr>
             </table>
