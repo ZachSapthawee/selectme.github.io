@@ -52,7 +52,7 @@ function GetNameAgent($idAgent)
             <!-- <h3>ทำให้การส่งสินค้า สะดวกและง่ายมากขึ้น</h3> -->
             <div class="button_promotion">
                 <img src="img/cover_promotion.jpg" alt="">
-                <div>
+                <div class="rewaard_row">
                     <div class="reward_page">
                         <p>คะแนนสะสมทั้งหมด</p>  <br>
                         <b>300</b> <br>

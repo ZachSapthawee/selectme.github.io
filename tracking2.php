@@ -1,11 +1,12 @@
 <?php
-    $shipmentNo = $_GET['sn'];
+$shipmentNo = $_GET['sn'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,32 +21,36 @@
     <link rel="shortcut icon" href="img/smicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/fontpage.css">
 </head>
+
 <body><br><br>
     <div class="container" style="width:100%;margin:0 auto">
         <div class="row">
             <div class="col col-sm-2 col-md-10 col-lg-10">
-                <ul class="timeline">
-                    <li class="active"><div class=>รับสินค้า</div></li>
+                <!-- <ul class="timeline">
+                    
+                    <li class="active"><div><i class="fas fa-check" style="font-size:36px;"></i>รับสินค้า</div></li>
                     <li class="active">กำลังเดินทาง</li>
                     <li>ส่งสินค้าสำเร็จ</li>
-                </ul>
+                </ul> -->
             </div>
+
             <div class="service-box">
-                    <div class="service-itemselect">
-                        <div class="service-card_select">
-                            <div class="col_left">
-                                <div><b>Shipment No : <?php echo $shipmentNo; ?></b></div>
-                                <div><b>วันและเวลาที่คาดว่าจะถึง : 1/31/2020 12:40:43 PM</b></div>
-                                <div><b>ต้นทาง : NAKHONRATCHASIMA_RDC</b></div>
-                                <div><b>ปลายทาง : ธนสินซูเปอร์สโตร์</b></div>
-                                <div><b>ประเภทรถ : 4 ล้อ</b></div>
-                            </div>
+                <div class="service-itemselect">
+                    <div class="service-card_select">
+                        <div class="col_left">
+                            <div><b>Shipment No : <?php echo $shipmentNo; ?></b></div>
+                            <div><b>วันและเวลาที่คาดว่าจะถึง : 1/31/2020 12:40:43 PM</b></div>
+                            <div><b>ต้นทาง : NAKHONRATCHASIMA_RDC</b></div>
+                            <div><b>ปลายทาง : ธนสินซูเปอร์สโตร์</b></div>
+                            <div><b>ประเภทรถ : 4 ล้อ</b></div>
+                        </div>
                         <div class="col_Right">
                             <img src="img/truck/4WHEELS_Truck.png" alt="รถบรรทุก" height="45px" style="margin: 10px;">
-                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
         </div>
-    </div>
 </body>
+
 </html>

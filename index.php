@@ -16,6 +16,7 @@
     <link rel="shortcut icon" href="img/smicon.png" type="image/x-icon"> 
 </head>
 <body>
+    <section class="login_page">
     <div class="login-wrapper">
             <div class="login-page-wrapper">
                 <img class="logo-img" src="img/Logo_SM.png" alt="Selectme" height="90">
@@ -44,6 +45,7 @@
             </div>
     </div>
 
+    </section>
     
 
 </body>

@@ -41,11 +41,13 @@ function GetNameAgent($idAgent)
     <meta name="description" content="การส่งของราคาถูก จองขนส่งและชำระค่าบริการออนไลน์ได้ทันที ที่สำคัญไม่ต้องจ้างขนส่งข้างนอกแพง">
     <link rel="shortcut icon" href="img/smicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/fontpage.css">
-</head>
 
+</head>
 <body>
+    
+
     <header>
-        <?php include("header.php"); ?>
+            <?php include("header.php");?> 
     </header>
 
     <section>
