@@ -26,12 +26,12 @@ $shipmentNo = $_GET['sn'];
     <div class="container" style="width:100%;margin:0 auto">
         <div class="row">
             <div class="col col-sm-2 col-md-10 col-lg-10">
-                <!-- <ul class="timeline">
+                <ul class="timeline">
                     
-                    <li class="active"><div><i class="fas fa-check" style="font-size:36px;"></i>รับสินค้า</div></li>
+                    <li class="active"><div>รับสินค้า</div></li>
                     <li class="active">กำลังเดินทาง</li>
                     <li>ส่งสินค้าสำเร็จ</li>
-                </ul> -->
+                </ul>
             </div>
 
             <div class="service-box">
